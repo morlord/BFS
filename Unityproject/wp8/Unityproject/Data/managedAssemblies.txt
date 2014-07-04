@@ -1,4 +1,0 @@
-Assembly-CSharp.dll
-Assembly-UnityScript-firstpass.dll
-Assembly-UnityScript.dll
-UnityEngine.UI.dll
