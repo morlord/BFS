@@ -19,6 +19,11 @@ bld/
 wp8
 Library
 Temp
+*.csproj
+*.pidb
+*.unityproj
+*.sln
+*.userprefs 
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
