@@ -8,8 +8,10 @@ public class ButtonPlace : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+
         btn = GetComponentInParent<Button>();
         btn.transform.position = Camera.main.ViewportToWorldPoint(new Vector3(14f, 55f));
+
 	}
 	
 	// Update is called once per frame

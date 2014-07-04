@@ -17,6 +17,7 @@ bld/
 [Oo]bj/
 
 wp8
+win8
 Library
 Temp
 *.csproj
