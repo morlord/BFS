@@ -46,10 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ButtonPlace.cs" />
-     <Compile Include="Assets\ChangeWeapon.cs" />
+     <Compile Include="Assets\Scoring.cs" />
      <Compile Include="Assets\scripts\BackgroundBehavior.cs" />
      <Compile Include="Assets\scripts\BossBehaviourScript.cs" />
+     <Compile Include="Assets\scripts\ChangeWeapon.cs" />
      <Compile Include="Assets\scripts\HeroBehavior.cs" />
      <Compile Include="Assets\scripts\PlasmaBehaviourScript.cs" />
      <Compile Include="Assets\scripts\SpawnController.cs" />
