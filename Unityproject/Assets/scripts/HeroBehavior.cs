@@ -7,7 +7,7 @@ public class HeroBehavior : MonoBehaviour
 {
 
     public float maxSpeed;
-    private Animator anim;
+    private Animator anim; 
     public Rigidbody2D bullet;
     public Joystick LJoystick, RJoystick;
 	private bool isLive = true;
@@ -61,7 +61,7 @@ public class HeroBehavior : MonoBehaviour
         if ((Input.GetKey(KeyCode.Space)||LJoystick.IsFingerDown()) &&deltaTime<0)
         {
             deltaTime = 0.2f;
-            Rigidbody2D bulletInstance = Instantiate(bullet, new Vector3( transform.position.x-0.7f,transform.position.y+0.4f,transform.position.z), Quaternion.Euler(new Vector3(0,0,0))) as Rigidbody2D;
+            Rigidbody2D bulletInstance = Instantiate(bullet, new Vector3( transform.position.x,transform.position.y+0.4f,transform.position.z), Quaternion.Euler(new Vector3(0,0,0))) as Rigidbody2D;
             if (bulletInstance != null) bulletInstance.velocity = Vector2.right*-1;
         }
         
