@@ -2,7 +2,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class SpawnController : MonoBehaviour
+public class SpawnController1 : MonoBehaviour
 {
 
     public float SpawnTime;
@@ -40,7 +40,7 @@ public class SpawnController : MonoBehaviour
 
     void AddScore(int num)
     {
-        _score += num; 
+        _score += num;
         ScoreText.text = _score.ToString();
     }
 
