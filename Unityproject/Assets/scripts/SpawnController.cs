@@ -40,7 +40,7 @@ public class SpawnController : MonoBehaviour
 
     void AddScore(int num)
     {
-        _score += num;
+        _score += num; 
         ScoreText.text = _score.ToString();
     }
 
