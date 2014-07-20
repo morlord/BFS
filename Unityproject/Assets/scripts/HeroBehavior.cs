@@ -60,15 +60,9 @@ public class HeroBehavior : MonoBehaviour
         deltaTime -= Time.deltaTime;
         if ((Input.GetKey(KeyCode.Space)||LJoystick.IsFingerDown()) &&deltaTime<0)
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            deltaTime = 0.2f;
-=======
+
             deltaTime = 0.5f;
->>>>>>> origin/Nerzull
-=======
-            deltaTime = 0.5f;
->>>>>>> origin/Nerzull
+
             Rigidbody2D bulletInstance = Instantiate(bullet, new Vector3( transform.position.x,transform.position.y+0.4f,transform.position.z), Quaternion.Euler(new Vector3(0,0,0))) as Rigidbody2D;
             if (bulletInstance != null) bulletInstance.velocity = Vector2.right*-1;
         }
