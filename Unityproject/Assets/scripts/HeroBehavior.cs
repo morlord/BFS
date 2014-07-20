@@ -61,7 +61,11 @@ public class HeroBehavior : MonoBehaviour
         if ((Input.GetKey(KeyCode.Space)||LJoystick.IsFingerDown()) &&deltaTime<0)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             deltaTime = 0.2f;
+=======
+            deltaTime = 0.5f;
+>>>>>>> origin/Nerzull
 =======
             deltaTime = 0.5f;
 >>>>>>> origin/Nerzull
