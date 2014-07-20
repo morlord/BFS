@@ -7,14 +7,14 @@ public class HeroBehavior : MonoBehaviour
 {
 
     public float maxSpeed;
-    private Animator anim;
+    private Animator anim; 
     public Rigidbody2D bullet;
     public Joystick LJoystick, RJoystick;
 	private bool isLive = true;
 	public int HP;
     Vector2 inputForce;
 
-    private float deltaTime = 0.2f;
+    private float deltaTime = 0.5f;
 	// Use this for initialization
 	void Start ()
     {
@@ -60,8 +60,16 @@ public class HeroBehavior : MonoBehaviour
         deltaTime -= Time.deltaTime;
         if ((Input.GetKey(KeyCode.Space)||LJoystick.IsFingerDown()) &&deltaTime<0)
         {
+<<<<<<< HEAD
+<<<<<<< HEAD
             deltaTime = 0.2f;
-            Rigidbody2D bulletInstance = Instantiate(bullet, new Vector3( transform.position.x-0.7f,transform.position.y+0.4f,transform.position.z), Quaternion.Euler(new Vector3(0,0,0))) as Rigidbody2D;
+=======
+            deltaTime = 0.5f;
+>>>>>>> origin/Nerzull
+=======
+            deltaTime = 0.5f;
+>>>>>>> origin/Nerzull
+            Rigidbody2D bulletInstance = Instantiate(bullet, new Vector3( transform.position.x,transform.position.y+0.4f,transform.position.z), Quaternion.Euler(new Vector3(0,0,0))) as Rigidbody2D;
             if (bulletInstance != null) bulletInstance.velocity = Vector2.right*-1;
         }
         

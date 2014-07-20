@@ -1,0 +1,97 @@
+﻿Merge remote-tracking branch 'origin/master' into Nerzull
+
+Conflicts:
+	Unityproject/Library/CurrentLayout.dwlt
+	Unityproject/Library/CurrentMaximizeLayout.dwlt
+	Unityproject/Library/ScriptAssemblies/Assembly-CSharp.dll
+	Unityproject/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
+	Unityproject/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll
+	Unityproject/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll.mdb
+	Unityproject/Library/ScriptAssemblies/Assembly-UnityScript.dll
+	Unityproject/Library/ScriptAssemblies/Assembly-UnityScript.dll.mdb
+	Unityproject/Library/assetDatabase3
+	Unityproject/Library/expandedItems
+	Unityproject/Library/guidmapper
+	Unityproject/Library/metadata/6f/6ff712e8761e6384ab36f30898d64f89
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch Nerzull
+# All conflicts fixed but you are still merging.
+#   (use "git commit" to conclude merge)
+#
+# Changes to be committed:
+#
+#	modified:   Unityproject/Assembly-CSharp-vs.csproj
+#	modified:   Unityproject/Assembly-CSharp.csproj
+#	modified:   Unityproject/Assets/Scenes/lvl1.unity
+#	modified:   Unityproject/Assets/Scenes/menu.unity
+#	new file:   Unityproject/Assets/Textures/Mobspawner/Manager.prefab
+#	new file:   Unityproject/Assets/Textures/Mobspawner/Spawner.prefab
+#	new file:   Unityproject/Assets/Textures/chtulhu/chtulhu.controller
+#	new file:   Unityproject/Assets/Textures/chtulhu/chtulhu.prefab
+#	new file:   Unityproject/Assets/Textures/chtulhu/chtulhudeath.png
+#	new file:   Unityproject/Assets/Textures/chtulhu/chtulhumove.png
+#	new file:   Unityproject/Assets/Textures/chtulhu/deathCh.anim
+#	new file:   Unityproject/Assets/Textures/chtulhu/moveCh.anim
+#	new file:   Unityproject/Assets/Textures/hero/Spawner.controller
+#	modified:   Unityproject/Assets/Textures/hero/hero3deagleIdle.anim
+#	modified:   Unityproject/Assets/Textures/hero/hero3deagleRun.anim
+#	new file:   Unityproject/Assets/Textures/skvi/skvi.png
+#	new file:   Unityproject/Assets/Textures/skvi/skvi.prefab
+#	new file:   Unityproject/Assets/Textures/skvi/skviController.controller
+#	new file:   Unityproject/Assets/Textures/skvi/skviDeath.anim
+#	new file:   Unityproject/Assets/Textures/skvi/skviRun.anim
+#	new file:   Unityproject/Assets/Textures/skvi/skvideath.png
+#	modified:   Unityproject/Assets/scripts/HeroBehavior.cs
+#	new file:   Unityproject/Assets/scripts/LeftTouchPad.prefab
+#	new file:   Unityproject/Assets/scripts/RightBorderBehavior.cs
+#	new file:   Unityproject/Assets/scripts/RightTouchPad.prefab
+#	modified:   Unityproject/Assets/scripts/SpawnController.cs
+#	new file:   Unityproject/Assets/scripts/SpawnController1.cs
+#	new file:   Unityproject/Assets/scripts/cthulhuBehavior.cs
+#	modified:   Unityproject/Assets/textures/bee/bee.anim
+#	modified:   Unityproject/Assets/textures/bee/beemove_0.prefab
+#	modified:   Unityproject/Assets/textures/bullet/bullet.prefab
+#	modified:   Unityproject/Assets/textures/hero/hero.prefab
+#	modified:   Unityproject/Library/CurrentLayout.dwlt
+#	modified:   Unityproject/Library/CurrentMaximizeLayout.dwlt
+#	modified:   Unityproject/Library/InspectorExpandedItems.asset
+#	modified:   Unityproject/Library/ScriptAssemblies/Assembly-CSharp.dll
+#	modified:   Unityproject/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
+#	modified:   Unityproject/Library/assetDatabase3
+#	modified:   Unityproject/Library/expandedItems
+#	modified:   Unityproject/Library/guidmapper
+#	modified:   Unityproject/Library/metadata/02/02e5f461eb2fec140a191b88ececf95c
+#	modified:   Unityproject/Library/metadata/11/11ad9979d08c37c498a6b26f93a3a603
+#	modified:   Unityproject/Library/metadata/24/244c19b648f194fcd8b57d4d66403c4e
+#	modified:   Unityproject/Library/metadata/26/266241ff33ac3784a91065d41955f676
+#	modified:   Unityproject/Library/metadata/28/28776ef410870442b8d64e6ce9a3d548
+#	modified:   Unityproject/Library/metadata/3c/3cadc5c144b6941fd9b94e6f6cbaa3cc
+#	modified:   Unityproject/Library/metadata/40/4066b8b2585fa1e408d0fa40726bcc3d
+#	modified:   Unityproject/Library/metadata/44/44b96e31814694584b1c35fec7dc42ea
+#	modified:   Unityproject/Library/metadata/53/535bd66f1f12441f6a3ec2969dfee5ab
+#	modified:   Unityproject/Library/metadata/6f/6ff712e8761e6384ab36f30898d64f89
+#	modified:   Unityproject/Library/metadata/81/81f90a056484f433badb55a7c96de025
+#	modified:   Unityproject/Library/metadata/96/9677010c6a0dd044b9f6ab65b26d51b0
+#	modified:   Unityproject/Library/metadata/99/99d520f65e8a545cf966b5179ed81e2c
+#	modified:   Unityproject/Library/metadata/9d/9d83e69ef8acb4f20832f9b0610058f3
+#	modified:   Unityproject/Library/metadata/a8/a899df05824c4844496256ad018e90b5
+#	modified:   Unityproject/Library/metadata/af/afebce546543c41b6ba72397a76314e3
+#	modified:   Unityproject/Library/metadata/c0/c0aa6ede535bc764f8d9ee362fabade6
+#	modified:   Unityproject/Library/metadata/c8/c85739185fa243b4483fd8faff75303a
+#	modified:   Unityproject/Library/metadata/ca/ca1d9a879c25e42b290503fe320c9347
+#	modified:   Unityproject/Library/metadata/d6/d6d33b7bb36056a4d932ce54db114c24
+#	modified:   Unityproject/Library/metadata/da/da8e93600ecdd4feca9cfb553a314e48
+#	modified:   Unityproject/Library/metadata/ef/ef4c125ff680143769b0c8bf1f1bd828
+#	modified:   Unityproject/Unityproject-csharp.sln
+#	modified:   Unityproject/Unityproject.sln
+#	modified:   Unityproject/Unityproject.userprefs
+#
+
