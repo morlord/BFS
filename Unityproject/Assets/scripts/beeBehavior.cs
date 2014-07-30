@@ -39,7 +39,8 @@ public class beeBehavior : MonoBehaviour
                 isLive = false;
                 DestroyObject(collider.gameObject);
                 Destroy(rigidbody2D.collider2D);
-                gameObject.layer = 0;
+				gameObject.layer = 0;
+				this.GetComponent<SpriteRenderer>().sortingOrder = 0;
                 controller.BroadcastMessage("AddScore",100);
             }
         }

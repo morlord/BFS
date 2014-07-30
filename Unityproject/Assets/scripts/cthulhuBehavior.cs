@@ -49,6 +49,7 @@ public class cthulhuBehavior : MonoBehaviour
                 isLive = false;
                 DestroyObject(collider.gameObject);
                 rigidbody2D.collider2D.enabled = false;
+	            this.GetComponent<SpriteRenderer>().sortingOrder = 0;
                 Invoke("CreateMob", 0.6f);
             }
         }
