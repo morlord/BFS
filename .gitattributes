@@ -21,7 +21,7 @@
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
 
-*.unity merge=binary
+#*.unity merge=binary
 *.prefab merge=binary
 *.png merge=binary
 *.psd merge=binary
