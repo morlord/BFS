@@ -8,7 +8,7 @@ public class SpawnController : MonoBehaviour
     public float SpawnTime;
     public GameObject[] MobsArray;
     public Transform[] SpawnLocationArray;
-    public GUIText ScoreText;
+    public UnityEngine.UI.Text ScoreText;
     private int _score;
 	// Use this for initialization
 	void Start () {
