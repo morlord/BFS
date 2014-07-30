@@ -5,11 +5,7 @@
 *.suo
 *.user
 *.sln.docstates
-*.bak
-*BACKUP*
-*REMOTE*
-*BASE*
-*LOCAL*
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -24,7 +20,7 @@ bld/
 Temp/
 Obj/
 UnityGenerated/
-
+Library/
  
 # ----[ Visual Studio / MonoDevelop generated ]------- #
  
@@ -51,7 +47,7 @@ Thumbs.db
 
 wp8
 win8
-
+Library
 Temp
 *.csproj
 *.pidb
@@ -215,3 +211,4 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+*.bak

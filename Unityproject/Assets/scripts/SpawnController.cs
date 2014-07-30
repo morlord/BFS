@@ -8,12 +8,12 @@ public class SpawnController : MonoBehaviour
     public float SpawnTime;
     public GameObject[] MobsArray;
     public Transform[] SpawnLocationArray;
-    public GUIText ScoreText;
+    public UnityEngine.UI.Text ScoreText;
     private int _score;
 	// Use this for initialization
 	void Start () {
 	Invoke("CreateMob",SpawnTime);
-//	    ScoreText.text = "0";
+	    ScoreText.text = "0";
 	    _score = 0;
 	}
 
@@ -41,7 +41,7 @@ public class SpawnController : MonoBehaviour
     void AddScore(int num)
     {
         _score += num; 
-       // ScoreText.text = _score.ToString();
+        ScoreText.text = _score.ToString();
     }
 
 }
