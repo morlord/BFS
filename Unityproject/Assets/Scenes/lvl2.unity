@@ -2952,11 +2952,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4066b8b2585fa1e408d0fa40726bcc3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Score: 1000
+  Money: 0
   SpawnTime: 2
   MobsArray:
   - {fileID: 100000, guid: 7b01452df7dce8c47975c14613af2122, type: 2}
   - {fileID: 100000, guid: 555af33c0d6ea2e46a8646dcb99cece9, type: 2}
   - {fileID: 100000, guid: 9a79703d5597d104ba4ffb5ff7a3ceb1, type: 2}
+  Boss: {fileID: 0}
   SpawnLocationArray:
   - {fileID: 676209718}
   - {fileID: 1636077379}
@@ -2966,6 +2969,7 @@ MonoBehaviour:
   - {fileID: 376222372}
   - {fileID: 393273358}
   ScoreText: {fileID: 1163955575}
+  IsBoss: 0
 --- !u!4 &1201055763
 Transform:
   m_ObjectHideFlags: 0
@@ -3338,7 +3342,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 7
   bullet: {fileID: 5000000, guid: 8419a4ad28cdf0648a64399434e7c3ee, type: 2}
-  LJoystick: {fileID: 340874502}
   RJoystick: {fileID: 475574346}
   HP: 1
 --- !u!60 &1465256743

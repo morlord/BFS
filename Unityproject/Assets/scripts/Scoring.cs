@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Scoring : MonoBehaviour {
+public class Scoring : MonoBehaviour
+{
 
+	private int Score, Money;
 	// Use this for initialization
 	void Start () {
 	

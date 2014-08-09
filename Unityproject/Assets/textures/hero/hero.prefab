@@ -108,9 +108,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ff712e8761e6384ab36f30898d64f89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: .200000003
+  maxSpeed: 7
   bullet: {fileID: 5000000, guid: 8419a4ad28cdf0648a64399434e7c3ee, type: 2}
-  LJoystick: {fileID: 0}
   RJoystick: {fileID: 0}
   HP: 1
 --- !u!212 &21200000

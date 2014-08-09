@@ -6,7 +6,7 @@ public class HeroBehavior : MonoBehaviour
     public float maxSpeed;
     private Animator anim; 
     public Rigidbody2D bullet;
-    public Joystick LJoystick, RJoystick;
+    public Joystick  RJoystick;
 	private bool isLive = true;
 	public int HP;
     Vector2 inputForce;
