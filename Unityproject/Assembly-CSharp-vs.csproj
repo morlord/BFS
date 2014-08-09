@@ -47,12 +47,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scoring.cs" />
+     <Compile Include="Assets\Textures\bosses\Strog\PlasmaBehaviourScript.cs" />
      <Compile Include="Assets\Textures\terminator\termBehaviourScript.cs" />
      <Compile Include="Assets\scripts\BackgroundBehavior.cs" />
      <Compile Include="Assets\scripts\BossBehaviourScript.cs" />
      <Compile Include="Assets\scripts\ChangeWeapon.cs" />
      <Compile Include="Assets\scripts\HeroBehavior.cs" />
-     <Compile Include="Assets\scripts\PlasmaBehaviourScript.cs" />
      <Compile Include="Assets\scripts\RightBorderBehavior.cs" />
      <Compile Include="Assets\scripts\SpawnController.cs" />
      <Compile Include="Assets\scripts\SpawnController1.cs" />
