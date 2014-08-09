@@ -60,6 +60,8 @@
      <Compile Include="Assets\scripts\beeBehavior.cs" />
      <Compile Include="Assets\scripts\bulletBehavior.cs" />
      <Compile Include="Assets\scripts\cthulhuBehavior.cs" />
+     <Compile Include="Assets\scripts\endOfGameMobs.cs" />
+     <Compile Include="Assets\scripts\returnToMenu.cs" />
      <Compile Include="Assets\scripts\setSize.cs" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />

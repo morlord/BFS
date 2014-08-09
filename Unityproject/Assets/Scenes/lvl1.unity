@@ -179,11 +179,6 @@ MonoBehaviour:
   m_Script: {fileID: -102971247, guid: 20c2a163775f09b4cafa29b19d0c9204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  advancedProps: 0
-  DisableOnMobilePlatforms: 1
-  Tags:
-    tagList:
-    - Mouse
 --- !u!114 &13512333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,11 +190,6 @@ MonoBehaviour:
   m_Script: {fileID: 770742126, guid: 20c2a163775f09b4cafa29b19d0c9204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  advancedProps: 0
-  DisableOnNonTouchPlatforms: 1
-  Tags:
-    tagList:
-    - Touch
 --- !u!1 &20435580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1860,6 +1850,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 671472789}
   - 61: {fileID: 671472788}
+  - 114: {fileID: 671472790}
   m_Layer: 0
   m_Name: BorderRight
   m_TagString: Untagged
@@ -1890,6 +1881,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
+--- !u!114 &671472790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 671472787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6bd9d0eaf448fe4e9bd53e7a3a346fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &676209717
 GameObject:
   m_ObjectHideFlags: 0
@@ -3422,17 +3424,6 @@ MonoBehaviour:
   m_Script: {fileID: 1235405773, guid: 20c2a163775f09b4cafa29b19d0c9204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  advancedProps: 0
-  combineTouches: 1
-  combineTouchesInterval: .300000012
-  useSendMessage: 0
-  sendStateChangeMessages: 0
-  sendMessageTarget: {fileID: 0}
-  requireGestureToFail: {fileID: 0}
-  friendlyGestures: []
-  numberOfTapsRequired: 1
-  timeLimit: Infinity
-  distanceLimit: Infinity
 --- !u!1 &1486296511
 GameObject:
   m_ObjectHideFlags: 0
