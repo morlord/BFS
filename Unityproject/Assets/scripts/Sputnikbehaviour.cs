@@ -51,7 +51,7 @@ public class Sputnikbehaviour : MonoBehaviour {
 	{ 		
 			rigidbody2D.velocity = Vector2.right * speed * 2;
 						yield return new WaitForSeconds (2.0f);
-						rigidbody2D.velocity = Vector2.zero;
+						rigidbody2D.velocity = Vector2.right*speed*5;
 			
 				
 
