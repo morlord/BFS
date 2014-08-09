@@ -13,3 +13,7 @@ EditorBuildSettings:
     path: Assets/Scenes/options.unity
   - enabled: 1
     path: Assets/Scenes/endOfGame.unity
+  - enabled: 1
+    path: Assets/Scenes/lvl2.unity
+  - enabled: 1
+    path: Assets/Scenes/lvl3.unity
