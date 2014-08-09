@@ -39,23 +39,26 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/UnityBeta/Editor/Data/PlaybackEngines/WP8Support/Tools/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/PlaybackEngines/WP8Support/Tools/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/UnityBeta/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scoring.cs" />
+     <Compile Include="Assets\Textures\bosses\Strog\PlasmaBehaviourScript.cs" />
+     <Compile Include="Assets\Textures\terminator\termBehaviourScript.cs" />
      <Compile Include="Assets\scripts\BackgroundBehavior.cs" />
      <Compile Include="Assets\scripts\BossBehaviourScript.cs" />
      <Compile Include="Assets\scripts\ButtonsMethods.cs" />
      <Compile Include="Assets\scripts\ChangeWeapon.cs" />
      <Compile Include="Assets\scripts\HeroBehavior.cs" />
-     <Compile Include="Assets\scripts\PlasmaBehaviourScript.cs" />
      <Compile Include="Assets\scripts\RightBorderBehavior.cs" />
      <Compile Include="Assets\scripts\Scoring.cs" />
      <Compile Include="Assets\scripts\SpawnController.cs" />
      <Compile Include="Assets\scripts\SpawnController1.cs" />
+     <Compile Include="Assets\scripts\Sputnikbehaviour.cs" />
      <Compile Include="Assets\scripts\StartGame.cs" />
      <Compile Include="Assets\scripts\beeBehavior.cs" />
      <Compile Include="Assets\scripts\bulletBehavior.cs" />
@@ -73,7 +76,7 @@
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files (x86)/UnityBeta/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
