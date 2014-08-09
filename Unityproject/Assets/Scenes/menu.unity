@@ -185,6 +185,8 @@ Canvas:
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!224 &256878085
 RectTransform:
   m_ObjectHideFlags: 0
@@ -344,6 +346,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_TargetGraphic: {fileID: 306723739}
+  m_Interactable: 1
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -616,6 +619,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_TargetGraphic: {fileID: 1310276353}
+  m_Interactable: 1
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -883,11 +887,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_TargetGraphic: {fileID: 1795860545}
+  m_Interactable: 1
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 832620569}
-        m_MethodName: LoadLevel
+        m_MethodName: LoadOptions
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

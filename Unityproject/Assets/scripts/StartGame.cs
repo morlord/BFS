@@ -14,4 +14,17 @@ public class StartGame : MonoBehaviour {
     {
         Application.LoadLevel(1);
     }
+
+	public void LoadOptions()
+	{
+		Application.LoadLevel(2);
+	}
+
+	void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			Application.Quit();
+		}
+	}
 }
