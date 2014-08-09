@@ -1,6 +1,16 @@
 fileFormatVersion: 2
 guid: 5319540f8f1389545abcb20c78cc8440
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: chtulhudeath_0
+    21300002: chtulhudeath_1
+    21300004: chtulhudeath_2
+    21300006: chtulhudeath_3
+    21300008: chtulhudeath_4
+    21300010: chtulhudeath_5
+    21300012: chtulhudeath_6
+    21300014: chtulhudeath_7
+    21300016: chtulhudeath_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

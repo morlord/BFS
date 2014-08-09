@@ -1,6 +1,8 @@
 fileFormatVersion: 2
 guid: e235161fd9fad4944943c725cefd15ce
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: plasma
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

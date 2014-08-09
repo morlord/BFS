@@ -1,6 +1,11 @@
 fileFormatVersion: 2
 guid: 81bb402313a928544bb40389e75bedfb
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: skvi_0
+    21300002: skvi_1
+    21300004: skvi_2
+    21300006: skvi_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

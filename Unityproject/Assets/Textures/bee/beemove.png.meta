@@ -1,6 +1,11 @@
 fileFormatVersion: 2
 guid: 614a265cec290ae4c83d98e16109ed38
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: beemove_0
+    21300002: beemove_1
+    21300004: beemove_2
+    21300006: beemove_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

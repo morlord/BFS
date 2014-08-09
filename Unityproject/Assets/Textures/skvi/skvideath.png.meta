@@ -1,6 +1,15 @@
 fileFormatVersion: 2
 guid: 6841095bc8e468b47bc1b6475219c23f
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: skvideath_0
+    21300002: skvideath_1
+    21300004: skvideath_2
+    21300006: skvideath_3
+    21300008: skvideath_4
+    21300010: skvideath_5
+    21300012: skvideath_6
+    21300014: skvideath_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

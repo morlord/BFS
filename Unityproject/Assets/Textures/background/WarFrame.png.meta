@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 22b0142eadd3c49469e00b4086e07711
+guid: 6a0c57129cc1ca042b1adf31442fe517
 TextureImporter:
   fileIDToRecycleName:
-    21300000: lvl0
+    21300000: WarFrame
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -38,7 +38,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 45
+  spritePixelsToUnits: 80
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
