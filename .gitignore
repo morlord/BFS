@@ -212,3 +212,6 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 *.bak
+Unityproject/Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll
+Unityproject/Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll
+Unityproject/Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll.meta

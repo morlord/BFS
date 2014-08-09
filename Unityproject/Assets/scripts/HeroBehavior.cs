@@ -1,7 +1,4 @@
-﻿using System.Diagnostics;
-using System.Runtime.InteropServices;
-using UnityEngine;
-using System.Collections;
+﻿using UnityEngine;
 
 public class HeroBehavior : MonoBehaviour
 {
@@ -19,22 +16,28 @@ public class HeroBehavior : MonoBehaviour
 	void Start ()
     {
         inputForce = new Vector2(0f, 0f);
-	    anim = GetComponent<Animator>();
+		anim = GetComponent<Animator>();
+		
 	}
 	
 	// Update is called once per frame
     private void FixedUpdate()
     {
-		if (isLive) {
-			var moveR = Input.GetAxis ("Horizontal");
-			var moveD = Input.GetAxis ("Vertical");
-			if (Mathf.Abs (moveD) > 0.1 || Mathf.Abs (moveR) > 0.1)
-				rigidbody2D.velocity = new Vector2 (moveR * maxSpeed, moveD * maxSpeed);
-			else {
-				rigidbody2D.velocity = new Vector2 (RJoystick.position.x * maxSpeed, RJoystick.position.y * maxSpeed);
-
+		if (isLive)
+		{
+			var moveR = Input.GetAxis("Horizontal");
+			var moveD = Input.GetAxis("Vertical");
+			if (Mathf.Abs(moveD) > 0.1 || Mathf.Abs(moveR) > 0.1)
+				rigidbody2D.velocity = new Vector2(moveR * maxSpeed, moveD * maxSpeed);
+			else
+			{
+				rigidbody2D.velocity = new Vector2(RJoystick.position.x * maxSpeed, RJoystick.position.y * maxSpeed);
+				if (rigidbody2D.velocity.x > 0)
+				{
+					rigidbody2D.velocity*=1.3f;
+				}
 			}
-			anim.SetFloat ("Speed", Mathf.Abs (rigidbody2D.velocity.magnitude));
+			anim.SetFloat("Speed", Mathf.Abs(rigidbody2D.velocity.magnitude));
 		}
 	}
 	void OnTriggerEnter2D(Collider2D collider)
@@ -55,16 +58,26 @@ public class HeroBehavior : MonoBehaviour
 		}
 	}
 
-    void Update()
-    {
-        deltaTime -= Time.deltaTime;
-        if ((Input.GetKey(KeyCode.Space)||LJoystick.IsFingerDown()) &&deltaTime<0)
-        {
-            deltaTime = 0.4f;
-            Rigidbody2D bulletInstance = Instantiate(bullet, new Vector3( transform.position.x,transform.position.y+0.4f,transform.position.z), Quaternion.Euler(new Vector3(0,0,0))) as Rigidbody2D;
-            if (bulletInstance != null) bulletInstance.velocity = Vector2.right*-1;
-        }
-        
-
-    }
+	private void Update()
+	{
+		RJoystick.touchZone = new Rect(Screen.width/2, 0, Screen.width/2, Screen.height);
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			Application.LoadLevel(0);
+		}
+		deltaTime -= Time.deltaTime;
+		var touchC = Input.touchCount;
+		for (int i = 0; i < touchC; i++)
+		{
+			var touch = Input.GetTouch(i);
+			if ((Input.GetKey(KeyCode.Space) || touch.position.x <= Screen.currentResolution.width/2) && deltaTime < 0)
+			{
+				deltaTime = 0.3f;
+				Rigidbody2D bulletInstance =
+					Instantiate(bullet, new Vector3(transform.position.x, transform.position.y + 0.4f, transform.position.z),
+						Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
+				if (bulletInstance != null) bulletInstance.velocity = Vector2.right*-1;
+			}
+		}
+	}
 }
