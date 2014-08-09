@@ -1,6 +1,15 @@
 fileFormatVersion: 2
 guid: adc91211bb791dc40a8f280069ee2484
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: chtulhumove_0
+    21300002: chtulhumove_1
+    21300004: chtulhumove_2
+    21300006: chtulhumove_3
+    21300008: chtulhumove_4
+    21300010: chtulhumove_5
+    21300012: chtulhumove_6
+    21300014: chtulhumove_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

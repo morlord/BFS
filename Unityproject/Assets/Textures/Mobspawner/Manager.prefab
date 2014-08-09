@@ -43,10 +43,9 @@ MonoBehaviour:
   MobsArray:
   - {fileID: 100000, guid: 7b01452df7dce8c47975c14613af2122, type: 2}
   - {fileID: 100000, guid: 9a79703d5597d104ba4ffb5ff7a3ceb1, type: 2}
+  - {fileID: 100000, guid: e7d1e6c3a1d34884288ba06af59a73da, type: 2}
+  - {fileID: 100000, guid: 503088f0fc958554e869b35fb966bc10, type: 2}
   SpawnLocationArray:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

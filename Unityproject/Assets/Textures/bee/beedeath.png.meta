@@ -1,6 +1,14 @@
 fileFormatVersion: 2
 guid: 68ca816f584bf2d43945874a369fd880
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: beedeath_0
+    21300002: beedeath_1
+    21300004: beedeath_2
+    21300006: beedeath_3
+    21300008: beedeath_4
+    21300010: beedeath_5
+    21300012: beedeath_6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
