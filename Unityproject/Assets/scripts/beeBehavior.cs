@@ -41,7 +41,7 @@ public class beeBehavior : MonoBehaviour
                 Destroy(rigidbody2D.collider2D);
 				gameObject.layer = 0;
 				this.GetComponent<SpriteRenderer>().sortingOrder = 0;
-                controller.BroadcastMessage("AddScore",100);
+                controller.BroadcastMessage("AddScore",5);
             }
         }
     }

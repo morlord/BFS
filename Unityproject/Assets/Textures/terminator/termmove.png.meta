@@ -52,50 +52,50 @@ TextureImporter:
     - name: termmove_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 32
-        width: 318
-        height: 294
+        x: 0
+        y: 0
+        width: 400
+        height: 337
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: termmove_1
       rect:
         serializedVersion: 2
-        x: 415
-        y: 34
-        width: 332
-        height: 286
+        x: 400
+        y: 0
+        width: 400
+        height: 337
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: termmove_2
       rect:
         serializedVersion: 2
-        x: 833
-        y: 26
-        width: 336
-        height: 292
+        x: 800
+        y: 0
+        width: 400
+        height: 337
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: termmove_3
       rect:
         serializedVersion: 2
-        x: 1208
-        y: 34
-        width: 344
-        height: 288
+        x: 1200
+        y: 0
+        width: 400
+        height: 337
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: termmove_4
       rect:
         serializedVersion: 2
-        x: 1604
-        y: 40
-        width: 357
-        height: 285
+        x: 1602
+        y: 0
+        width: 398
+        height: 337
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
