@@ -2949,8 +2949,8 @@ MonoBehaviour:
   SpawnTime: 2
   MobsArray:
   - {fileID: 100000, guid: 7b01452df7dce8c47975c14613af2122, type: 2}
-  - {fileID: 100000, guid: 555af33c0d6ea2e46a8646dcb99cece9, type: 2}
   - {fileID: 100000, guid: d10e7b171ac05544aaa0abf0841cba96, type: 2}
+  - {fileID: 100000, guid: 555af33c0d6ea2e46a8646dcb99cece9, type: 2}
   Boss: {fileID: 0}
   SpawnLocationArray:
   - {fileID: 676209718}

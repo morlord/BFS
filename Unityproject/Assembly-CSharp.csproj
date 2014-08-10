@@ -47,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Textures\bosses\Strog\PlasmaBehaviourScript.cs" />
-     <Compile Include="Assets\Textures\terminator\termBehaviourScript.cs" />
      <Compile Include="Assets\scripts\BackgroundBehavior.cs" />
      <Compile Include="Assets\scripts\BossBehaviourScript.cs" />
      <Compile Include="Assets\scripts\ButtonsMethods.cs" />
@@ -64,6 +63,7 @@
      <Compile Include="Assets\scripts\cthulhuBehavior.cs" />
      <Compile Include="Assets\scripts\endOfGameMobs.cs" />
      <Compile Include="Assets\scripts\giantbehaviourscript.cs" />
+     <Compile Include="Assets\scripts\ortosBehaviourScript.cs" />
      <Compile Include="Assets\scripts\returnToMenu.cs" />
      <Compile Include="Assets\scripts\setSize.cs" />
      <Compile Include="Assets\scripts\skviBehaviourScript.cs" />

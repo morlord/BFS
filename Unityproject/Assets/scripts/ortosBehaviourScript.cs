@@ -1,14 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class termBehaviourScript : MonoBehaviour {
+public class ortosBehaviourScript : MonoBehaviour {
+
 	public float speed;
-	public Animator animator;
+	private Animator animator;
 	private bool isLive = true;
+	private SpawnController controller;
 	public int HP;
 	// Use this for initialization
 	void Start()
 	{
+		animator = GetComponent<Animator>();
+		controller = FindObjectOfType<SpawnController>();
+		Debug.Log ("start debug");
 	}
 	
 	// Update is called once per frame
@@ -20,6 +25,7 @@ public class termBehaviourScript : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D collider)
 	{
+		Debug.Log ("collides");
 		if (collider.gameObject.tag == "bullet")
 		{
 			HP -= 1;
@@ -28,9 +34,13 @@ public class termBehaviourScript : MonoBehaviour {
 			{
 				animator.SetBool("isLive", false);
 				rigidbody2D.velocity = Vector2.zero;
+				transform.position.Set(transform.position.x, transform.position.y, 0);
 				isLive = false;
 				DestroyObject(collider.gameObject);
-				rigidbody2D.collider2D.enabled = false;
+				Destroy(rigidbody2D.collider2D);
+				gameObject.layer = 0;
+				this.GetComponent<SpriteRenderer>().sortingOrder = 0;
+				controller.BroadcastMessage("AddScore",10);
 			}
 		}
 	}
