@@ -309,12 +309,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a6b2cca0ccfd18047a7bdc85c3803a08, type: 2}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: a6b2cca0ccfd18047a7bdc85c3803a08, type: 2}
       propertyPath: RJoystick
       value: 
       objectReference: {fileID: 475574346}
+    - target: {fileID: 9500000, guid: a6b2cca0ccfd18047a7bdc85c3803a08, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7319dbd0ff4b5214bafd7164908d98ed, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6b2cca0ccfd18047a7bdc85c3803a08, type: 2}
   m_RootGameObject: {fileID: 1465256739}
