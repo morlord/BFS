@@ -129,7 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   plasma: {fileID: 5000000, guid: f1f884c80bc2bfb4d892a0df4fa99ee9, type: 2}
-  HP: 2
+  HP: 15
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

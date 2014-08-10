@@ -3,6 +3,10 @@ guid: e8195cd88e2d56f44ae56e21375b3b33
 TextureImporter:
   fileIDToRecycleName:
     21300000: HeroAutorifflemove
+    21300002: HeroAutorifflemove_0
+    21300004: HeroAutorifflemove_1
+    21300006: HeroAutorifflemove_2
+    21300008: HeroAutorifflemove_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,23 +30,63 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 46
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: HeroAutorifflemove_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 143
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HeroAutorifflemove_1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 143
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HeroAutorifflemove_2
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 0
+        width: 143
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HeroAutorifflemove_3
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 0
+        width: 143
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Hero3drifle
+  m_Name: Hero3shotgun
   serializedVersion: 2
   m_AnimatorParameters:
   - m_Name: Speed
@@ -141,7 +141,7 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: 2aa875b9d12849a44b0f1b2ebd7e3f26, type: 2}
+  - {fileID: 7400000, guid: e773ce50a26448f41aebc71dcf2bc519, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 360, y: 36, z: 0}
   m_IKOnFeet: 0
@@ -171,7 +171,7 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: e3895229d8b896c4b9beafc51ad5cd63, type: 2}
+  - {fileID: 7400000, guid: 12fa764bbc0248f4aaeeceaa9aba03f8, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 85, y: 115, z: 0}
   m_IKOnFeet: 0

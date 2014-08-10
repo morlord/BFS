@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<levels>
+  <level id="1" sceneid="1" nextlvl="4"></level>
+  <level id="2" sceneid="4" nextlvl="5"></level>
+  <level id="3" sceneid="5" nextlvl="6"></level>
+</levels>

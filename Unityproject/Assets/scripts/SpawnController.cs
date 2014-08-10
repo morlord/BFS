@@ -1,5 +1,7 @@
 ﻿using System.Globalization;
 using System.Linq;
+using System.Xml;
+using System.Xml.Linq;
 using UnityEngine;
 using System.Collections;
 
@@ -14,8 +16,12 @@ public class SpawnController : MonoBehaviour
     public UnityEngine.UI.Text ScoreText;
     private double _score;
 	public bool IsBoss;
+	private XDocument document;
 	// Use this for initialization
 	void Start () {
+		//Debug.Log(Application.dataPath+", "+Application.persistentDataPath);
+		var levelsAsset = Resources.Load<TextAsset>("levels");
+		document=XDocument.Parse(levelsAsset.text);
 	Invoke("CreateMob",SpawnTime);
 	    ScoreText.text = "0";
 	    _score = 0;
@@ -33,10 +39,10 @@ public class SpawnController : MonoBehaviour
 	    if (_score >= Score)
 	    {
 			if(IsBoss)
-				Invoke("CreateBoss",1500);
+				Invoke("CreateBoss",7);
 			else
 			{
-				Application.LoadLevel(5);
+				Application.LoadLevel(4);
 			}
 	    }
 		else
@@ -45,7 +51,10 @@ public class SpawnController : MonoBehaviour
 
 	void CreateBoss()
 	{
-		
+		int randomSpawn = Random.Range(0, SpawnLocationArray.Count());
+
+		Instantiate(Boss, SpawnLocationArray[randomSpawn].position,
+			SpawnLocationArray[randomSpawn].rotation);
 	}
 	// Update is called once per frame
 	void Update ()
