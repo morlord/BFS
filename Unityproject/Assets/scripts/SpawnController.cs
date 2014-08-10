@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
+using System.Xml.XPath;
 using UnityEngine;
 using System.Collections;
 
@@ -17,11 +18,15 @@ public class SpawnController : MonoBehaviour
     private double _score;
 	public bool IsBoss;
 	private XDocument document;
+	private int nextlvl;
 	// Use this for initialization
 	void Start () {
 		//Debug.Log(Application.dataPath+", "+Application.persistentDataPath);
 		var levelsAsset = Resources.Load<TextAsset>("levels");
 		document=XDocument.Parse(levelsAsset.text);
+		var node = document.Root;
+		var t = node.Descendants("level").Single(a => a.Attribute("sceneid").Value == Application.loadedLevel.ToString());
+		nextlvl = int.Parse(t.Attribute("nextlvl").Value);
 	Invoke("CreateMob",SpawnTime);
 	    ScoreText.text = "0";
 	    _score = 0;
@@ -42,7 +47,7 @@ public class SpawnController : MonoBehaviour
 				Invoke("CreateBoss",7);
 			else
 			{
-				Application.LoadLevel(4);
+				Application.LoadLevel(nextlvl);
 			}
 	    }
 		else
