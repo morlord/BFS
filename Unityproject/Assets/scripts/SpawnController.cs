@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
@@ -20,17 +21,24 @@ public class SpawnController : MonoBehaviour
 	private XDocument document;
 	private int nextlvl;
 	// Use this for initialization
-	void Start () {
+	void Start()
+	{
+		if (Application.loadedLevel == 1)
+			File.Delete("scores.txt");
 		//Debug.Log(Application.dataPath+", "+Application.persistentDataPath);
+		if (File.Exists("scores.txt"))
+		{
+			var f = File.OpenText("scores.txt");
+			_score = int.Parse(f.ReadLine());
+			f.Close();
+		}
 		var levelsAsset = Resources.Load<TextAsset>("levels");
 		document=XDocument.Parse(levelsAsset.text);
 		var node = document.Root;
 		var t = node.Descendants("level").Single(a => a.Attribute("sceneid").Value == Application.loadedLevel.ToString());
 		nextlvl = int.Parse(t.Attribute("nextlvl").Value);
 	Invoke("CreateMob",SpawnTime);
-	    ScoreText.text = "0";
-	    _score = 0;
-		Money = 0;
+	    ScoreText.text = _score.ToString();
 	}
 
     void CreateMob()
@@ -47,6 +55,19 @@ public class SpawnController : MonoBehaviour
 				Invoke("CreateBoss",7);
 			else
 			{
+				if (File.Exists("scores.txt"))
+				{
+					File.Delete("scores.txt");
+					var f = File.CreateText("scores.txt");
+					f.WriteLine(_score);
+					f.Close();
+				}
+				else
+				{
+					var f = File.CreateText("scores.txt");
+					f.WriteLine(_score);
+					f.Close();
+				}
 				Application.LoadLevel(nextlvl);
 			}
 	    }

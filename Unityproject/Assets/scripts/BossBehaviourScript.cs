@@ -11,6 +11,7 @@ public class BossBehaviourScript : MonoBehaviour {
 	public Rigidbody2D plasma;
 	private bool isLive = true;
 	public int HP;
+	private int timelimit=1;
 
 		// Use this for initialization
 	void Start()
@@ -51,7 +52,6 @@ public class BossBehaviourScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		int timelimit = Random.Range (2, 50);
 		if (timelimit > 1) 
 		{
 			timelimit -= 1;
@@ -63,6 +63,7 @@ public class BossBehaviourScript : MonoBehaviour {
 		{
 			Rigidbody2D plasmaInstance = Instantiate(plasma, new Vector3( transform.position.x+0.7f,transform.position.y+0.9f,transform.position.z), Quaternion.Euler(new Vector3(0,0,0))) as Rigidbody2D;
 			if (plasmaInstance != null) plasma.velocity = Vector2.right;
+			timelimit = Random.Range(10, 70);
 		}
 	}
 }

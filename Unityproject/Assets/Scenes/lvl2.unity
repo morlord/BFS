@@ -3364,7 +3364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4066b8b2585fa1e408d0fa40726bcc3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 200
+  Score: 150
   Money: 0
   SpawnTime: 2
   MobsArray:
@@ -3372,7 +3372,6 @@ MonoBehaviour:
   - {fileID: 100000, guid: 555af33c0d6ea2e46a8646dcb99cece9, type: 2}
   - {fileID: 100000, guid: 9a79703d5597d104ba4ffb5ff7a3ceb1, type: 2}
   - {fileID: 100000, guid: 69e21857120fe584caa0004dc895ec6d, type: 2}
-  - {fileID: 100000, guid: 59c11cfe1565b6d48ac5af86a461768e, type: 2}
   Boss: {fileID: 100000, guid: 13f6191af34cc2948a42f287f389ac0a, type: 2}
   SpawnLocationArray:
   - {fileID: 676209718}

@@ -13,7 +13,7 @@ GameObject:
   - 60: {fileID: 6000000}
   - 114: {fileID: 11400000}
   - 95: {fileID: 9500000}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ortos
   m_TagString: mob
   m_Icon: {fileID: 0}
