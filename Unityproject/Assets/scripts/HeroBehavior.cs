@@ -54,8 +54,15 @@ public class HeroBehavior : MonoBehaviour
 				isLive = false;
 				DestroyObject(collider.gameObject);
 				rigidbody2D.collider2D.enabled = false;
+				GetComponent<SpriteRenderer>().sortingLayerName = "mobs";
+				Invoke("endGame",2);
 			}
 		}
+	}
+
+	void endGame()
+	{
+		Application.LoadLevel(3);
 	}
 
 	private void Update()
@@ -78,6 +85,14 @@ public class HeroBehavior : MonoBehaviour
 						Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
 				if (bulletInstance != null) bulletInstance.velocity = Vector2.right*-1;
 			}
+		}
+		if ((Input.GetKey(KeyCode.Space) ) && deltaTime < 0)
+		{
+			deltaTime = 0.3f;
+			Rigidbody2D bulletInstance =
+				Instantiate(bullet, new Vector3(transform.position.x, transform.position.y + 0.4f, transform.position.z),
+					Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
+			if (bulletInstance != null) bulletInstance.velocity = Vector2.right * -1;
 		}
 	}
 }

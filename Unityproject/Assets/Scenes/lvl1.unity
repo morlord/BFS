@@ -2529,7 +2529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4066b8b2585fa1e408d0fa40726bcc3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 500
+  Score: 100
   Money: 0
   SpawnTime: 2
   MobsArray:

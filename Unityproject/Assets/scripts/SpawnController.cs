@@ -79,8 +79,8 @@ public class SpawnController : MonoBehaviour
 	{
 		int randomSpawn = Random.Range(0, SpawnLocationArray.Count());
 
-		Instantiate(Boss, SpawnLocationArray[randomSpawn].position,
-			SpawnLocationArray[randomSpawn].rotation);
+		Instantiate(Boss, SpawnLocationArray[4].position,
+			SpawnLocationArray[4].rotation);
 	}
 	// Update is called once per frame
 	void Update ()

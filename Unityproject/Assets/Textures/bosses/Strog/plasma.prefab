@@ -12,7 +12,7 @@ GameObject:
   - 60: {fileID: 6000000}
   - 114: {fileID: 11400000}
   - 50: {fileID: 5000000}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: plasma
   m_TagString: plasma
   m_Icon: {fileID: 0}
@@ -96,8 +96,8 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 547057245
-  m_SortingOrder: 0
+  m_SortingLayerID: 37398665
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 715d4b0e151068348a1785e2e7226694, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
