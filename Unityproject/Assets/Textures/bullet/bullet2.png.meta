@@ -1,6 +1,11 @@
 fileFormatVersion: 2
 guid: 1bf502352407d1148b4c3808e550ec8a
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: bullet2_0
+    21300002: bullet2_1
+    21300004: bullet2_2
+    21300006: bullet2_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
