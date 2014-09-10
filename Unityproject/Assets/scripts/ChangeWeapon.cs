@@ -36,7 +36,13 @@ public class ChangeWeapon : MonoBehaviour
         var hero = GameObject.Find("hero");
         var controller = hero.GetComponent<Animator>();
         controller.runtimeAnimatorController = controler;
-        var go = GameObject.Find("Window");
-        go.SetActive(false);
     }
+	public void SetBullet(Rigidbody2D bullet)
+	{
+		paused = false;
+		var hero = GameObject.Find("hero").GetComponent<HeroBehavior>();
+		hero.bullet = bullet;
+		var go = GameObject.Find("Window");
+		go.SetActive(false);
+	}
 }

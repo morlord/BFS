@@ -160,6 +160,10 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 7319dbd0ff4b5214bafd7164908d98ed, type: 2}
+    - target: {fileID: 11400000, guid: a6b2cca0ccfd18047a7bdc85c3803a08, type: 2}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 5000000, guid: ca64d29531f1721489734ee863ff98d2, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6b2cca0ccfd18047a7bdc85c3803a08, type: 2}
   m_RootGameObject: {fileID: 1465256739}
@@ -211,7 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
+  m_Material: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
   m_Color: {r: .897058845, g: .861485839, b: .784926474, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -226,8 +230,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Plasmagun
-  m_ShownAsPassword: 0
-  m_ShowPasswordLastChar: 0
 --- !u!222 &122231565
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -286,7 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 3cc66b78ab25c204f9b4d415d02e3abe, type: 2}
+  m_Material: {fileID: 2100000, guid: 3cc66b78ab25c204f9b4d415d02e3abe, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: 75d55bad582a5e54781f91cf155b6581, type: 3}
   m_Type: 0
@@ -403,7 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 0}
+  m_Material: {fileID: 0}
   m_Color: {r: .897058845, g: .861485839, b: .784926474, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -420,8 +422,6 @@ MonoBehaviour:
   m_Text: A <color=#99ff00>Scroll Rect</color> combined with an <color=#99ff00>Image
     Mask</color> or <color=#99ff00>Rect Mask</color> can be used to create a scroll
     view.
-  m_ShownAsPassword: 0
-  m_ShowPasswordLastChar: 0
 --- !u!222 &287882150
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -765,6 +765,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_Enabled: 1
+      - m_Target: {fileID: 1486154493}
+        m_MethodName: SetBullet
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5000000, guid: c62cebde42f5b1d478ee063db54ed84f,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Rigidbody2D, UnityEngine,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &438061098
@@ -902,7 +915,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
+  m_Material: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: e484876f0cfbe8d46981ae0062b5e77f, type: 3}
   m_Type: 0
@@ -1050,7 +1063,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 0}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: 0819fcb4233c9c7408a11ef50afc656a, type: 3}
   m_Type: 0
@@ -1238,7 +1251,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 0}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: .709803939}
   m_Sprite: {fileID: 21300000, guid: a485d3ad44f498444aa0a57b27ebc089, type: 3}
   m_Type: 0
@@ -1300,7 +1313,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
+  m_Material: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: ac340c3dc2e7c184485c13fb88710f98, type: 3}
   m_Type: 0
@@ -1558,7 +1571,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
+  m_Material: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: d93b506ef238bdf4488553d76a763da4, type: 3}
   m_Type: 0
@@ -1982,7 +1995,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
+  m_Material: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: e484876f0cfbe8d46981ae0062b5e77f, type: 3}
   m_Type: 0
@@ -2045,7 +2058,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
+  m_Material: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: e56d46359327d5743ba64b883eabb27e, type: 3}
   m_Type: 1
@@ -2236,7 +2249,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
+  m_Material: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
   m_Color: {r: .897058845, g: .861485839, b: .784926474, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -2251,8 +2264,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Deagle
-  m_ShownAsPassword: 0
-  m_ShowPasswordLastChar: 0
 --- !u!222 &1119126526
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2306,7 +2317,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
+  m_Material: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: e484876f0cfbe8d46981ae0062b5e77f, type: 3}
   m_Type: 0
@@ -2369,7 +2380,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
+  m_Material: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
   m_Color: {r: .897058845, g: .861485839, b: .784926474, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -2384,8 +2395,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Shotgun
-  m_ShownAsPassword: 0
-  m_ShowPasswordLastChar: 0
 --- !u!222 &1163924211
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2441,6 +2450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: .5}
   m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!114 &1163955575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2452,7 +2462,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 0}
+  m_Material: {fileID: 0}
   m_Color: {r: .171280265, g: .970588207, b: .242942348, a: .784313738}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -2467,8 +2477,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 99000
-  m_ShownAsPassword: 0
-  m_ShowPasswordLastChar: 0
 --- !u!222 &1163955576
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2773,6 +2781,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1465256741
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2802,7 +2811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 7
-  bullet: {fileID: 5000000, guid: 8419a4ad28cdf0648a64399434e7c3ee, type: 2}
+  bullet: {fileID: 5000000, guid: ca64d29531f1721489734ee863ff98d2, type: 2}
   RJoystick: {fileID: 475574346}
   HP: 1
 --- !u!60 &1465256743
@@ -2923,7 +2932,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
+  m_Material: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: e484876f0cfbe8d46981ae0062b5e77f, type: 3}
   m_Type: 0
@@ -3294,7 +3303,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
+  m_Material: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
   m_Color: {r: .897058845, g: .861485839, b: .784926474, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -3309,8 +3318,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Unity GUI
-  m_ShownAsPassword: 0
-  m_ShowPasswordLastChar: 0
 --- !u!222 &1587399724
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3391,7 +3398,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
+  m_Material: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
   m_Color: {r: .897058845, g: .861485839, b: .784926474, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -3406,8 +3413,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Unity GUI
-  m_ShownAsPassword: 0
-  m_ShowPasswordLastChar: 0
 --- !u!222 &1709810404
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3461,7 +3466,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
+  m_Material: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: e484876f0cfbe8d46981ae0062b5e77f, type: 3}
   m_Type: 0
@@ -3574,7 +3579,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
+  m_Material: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
   m_Color: {r: .897058845, g: .861485839, b: .784926474, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -3589,8 +3594,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Unity GUI
-  m_ShownAsPassword: 0
-  m_ShowPasswordLastChar: 0
 --- !u!222 &1762356562
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3644,7 +3647,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
+  m_Material: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
   m_Color: {r: .897058845, g: .861485839, b: .784926474, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -3659,8 +3662,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Unity GUI
-  m_ShownAsPassword: 0
-  m_ShowPasswordLastChar: 0
 --- !u!222 &1857559709
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3714,7 +3715,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
+  m_Material: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: e484876f0cfbe8d46981ae0062b5e77f, type: 3}
   m_Type: 0
@@ -3760,7 +3761,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
+  m_Material: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
   m_Color: {r: .897058845, g: .861485839, b: .784926474, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -3775,8 +3776,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Unity GUI
-  m_ShownAsPassword: 0
-  m_ShowPasswordLastChar: 0
 --- !u!222 &1876147728
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3852,7 +3851,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 0}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -3867,8 +3866,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: <color=#00ff00>Upgrade your weapon!</color>
-  m_ShownAsPassword: 0
-  m_ShowPasswordLastChar: 0
 --- !u!1 &1890573408
 GameObject:
   m_ObjectHideFlags: 0
@@ -3921,7 +3918,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 0}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: .419607848}
   m_Sprite: {fileID: 21300000, guid: 6032fec9cfb93ec479cebc2a3190fa71, type: 3}
   m_Type: 1
@@ -3977,7 +3974,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
+  m_Material: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
   m_Color: {r: .897058845, g: .861485839, b: .784926474, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -3992,8 +3989,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Autoriffle
-  m_ShownAsPassword: 0
-  m_ShowPasswordLastChar: 0
 --- !u!222 &1902076896
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4170,7 +4165,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
+  m_Material: {fileID: 2100000, guid: 0dbd65fd1f3710a429ff9ff415a33add, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: 83408041db3c82049abaac5638ca3fe4, type: 3}
   m_Type: 0
@@ -4233,7 +4228,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mat: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
+  m_Material: {fileID: 2100000, guid: 8234307af4e696448bfe6183ec2106f1, type: 2}
   m_Color: {r: .897058845, g: .861485839, b: .784926474, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -4248,8 +4243,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Unity GUI
-  m_ShownAsPassword: 0
-  m_ShowPasswordLastChar: 0
 --- !u!222 &2090242090
 CanvasRenderer:
   m_ObjectHideFlags: 0
