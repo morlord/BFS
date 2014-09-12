@@ -47,7 +47,11 @@ TextureImporter:
   spritePixelsToUnits: 45
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: WP8
+    maxTextureSize: 2048
+    textureFormat: -1
+    compressionQuality: 50
   spriteSheet:
     sprites:
     - name: beedeath_0
