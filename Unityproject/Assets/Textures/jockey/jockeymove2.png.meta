@@ -1,12 +1,14 @@
 fileFormatVersion: 2
-guid: 46cfbd4b36359cf48accf5374014e6a4
+guid: 45d9cc65899fe314b841e2e6c0000171
 TextureImporter:
   fileIDToRecycleName:
-    21300000: beemove2
-    21300002: beemove2_0
-    21300004: beemove2_1
-    21300006: beemove2_2
-    21300008: beemove2_3
+    21300000: jockeymove2
+    21300002: jockeymove2_0
+    21300004: jockeymove2_1
+    21300006: jockeymove2_2
+    21300008: jockeymove2_3
+    21300010: jockeymove2_4
+    21300012: jockeymove2_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -42,51 +44,71 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 45
+  spritePixelsToUnits: 35
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: beemove2_0
+    - name: jockeymove2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 98
-        height: 80
+        width: 185
+        height: 190
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: beemove2_1
+    - name: jockeymove2_1
       rect:
         serializedVersion: 2
-        x: 98
+        x: 185
         y: 0
-        width: 98
-        height: 80
+        width: 185
+        height: 190
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: beemove2_2
+    - name: jockeymove2_2
       rect:
         serializedVersion: 2
-        x: 196
+        x: 370
         y: 0
-        width: 98
-        height: 80
+        width: 185
+        height: 190
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: beemove2_3
+    - name: jockeymove2_3
       rect:
         serializedVersion: 2
-        x: 294
+        x: 555
         y: 0
-        width: 98
-        height: 80
+        width: 185
+        height: 190
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jockeymove2_4
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 0
+        width: 185
+        height: 190
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jockeymove2_5
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 0
+        width: 185
+        height: 190
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

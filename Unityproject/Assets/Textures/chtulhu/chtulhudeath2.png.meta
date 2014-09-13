@@ -1,19 +1,17 @@
 fileFormatVersion: 2
-guid: 0ba0138b35ff05a4aa076638694b03d4
+guid: 19f45ba860e383548a7ebbd41981c21c
 TextureImporter:
   fileIDToRecycleName:
-    21300000: jockeydeath1
-    21300002: jockeydeath1_0
-    21300004: jockeydeath1_1
-    21300006: jockeydeath1_2
-    21300008: jockeydeath1_3
-    21300010: jockeydeath1_4
-    21300012: jockeydeath1_5
-    21300014: jockeydeath1_6
-    21300016: jockeydeath1_7
-    21300018: jockeydeath1_8
-    21300020: jockeydeath1_9
-    21300022: jockeydeath1_10
+    21300000: chtulhudeath2
+    21300002: chtulhudeath2_0
+    21300004: chtulhudeath2_1
+    21300006: chtulhudeath2_2
+    21300008: chtulhudeath2_3
+    21300010: chtulhudeath2_4
+    21300012: chtulhudeath2_5
+    21300014: chtulhudeath2_6
+    21300016: chtulhudeath2_7
+    21300018: chtulhudeath2_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,119 +47,99 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 35
+  spritePixelsToUnits: 45
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: jockeydeath1_0
+    - name: chtulhudeath2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 186
-        height: 190
+        width: 161
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_1
+    - name: chtulhudeath2_1
       rect:
         serializedVersion: 2
-        x: 186
+        x: 161
         y: 0
-        width: 186
-        height: 190
+        width: 161
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_2
+    - name: chtulhudeath2_2
       rect:
         serializedVersion: 2
-        x: 372
+        x: 322
         y: 0
-        width: 186
-        height: 190
+        width: 161
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_3
+    - name: chtulhudeath2_3
       rect:
         serializedVersion: 2
-        x: 558
+        x: 483
         y: 0
-        width: 186
-        height: 190
+        width: 161
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_4
+    - name: chtulhudeath2_4
       rect:
         serializedVersion: 2
-        x: 744
+        x: 644
         y: 0
-        width: 186
-        height: 190
+        width: 161
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_5
+    - name: chtulhudeath2_5
       rect:
         serializedVersion: 2
-        x: 930
+        x: 805
         y: 0
-        width: 186
-        height: 190
+        width: 161
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_6
+    - name: chtulhudeath2_6
       rect:
         serializedVersion: 2
-        x: 1116
+        x: 966
         y: 0
-        width: 186
-        height: 190
+        width: 161
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_7
+    - name: chtulhudeath2_7
       rect:
         serializedVersion: 2
-        x: 1302
+        x: 1127
         y: 0
-        width: 186
-        height: 190
+        width: 161
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_8
+    - name: chtulhudeath2_8
       rect:
         serializedVersion: 2
-        x: 1488
+        x: 1288
         y: 0
-        width: 186
-        height: 190
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_9
-      rect:
-        serializedVersion: 2
-        x: 1674
-        y: 0
-        width: 186
-        height: 190
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_10
-      rect:
-        serializedVersion: 2
-        x: 1860
-        y: 0
-        width: 186
-        height: 190
+        width: 161
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
