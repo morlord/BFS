@@ -1,12 +1,16 @@
 fileFormatVersion: 2
-guid: 46cfbd4b36359cf48accf5374014e6a4
+guid: d946bfd167cfb06408ba6ceb2e43405c
 TextureImporter:
   fileIDToRecycleName:
-    21300000: beemove2
-    21300002: beemove2_0
-    21300004: beemove2_1
-    21300006: beemove2_2
-    21300008: beemove2_3
+    21300000: chtulhumove2
+    21300002: chtulhumove2_0
+    21300004: chtulhumove2_1
+    21300006: chtulhumove2_2
+    21300008: chtulhumove2_3
+    21300010: chtulhumove2_4
+    21300012: chtulhumove2_5
+    21300014: chtulhumove2_6
+    21300016: chtulhumove2_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -48,43 +52,83 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: beemove2_0
+    - name: chtulhumove2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 98
-        height: 80
+        width: 161
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: beemove2_1
+    - name: chtulhumove2_1
       rect:
         serializedVersion: 2
-        x: 98
+        x: 161
         y: 0
-        width: 98
-        height: 80
+        width: 161
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: beemove2_2
+    - name: chtulhumove2_2
       rect:
         serializedVersion: 2
-        x: 196
+        x: 322
         y: 0
-        width: 98
-        height: 80
+        width: 161
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: beemove2_3
+    - name: chtulhumove2_3
       rect:
         serializedVersion: 2
-        x: 294
+        x: 483
         y: 0
-        width: 98
-        height: 80
+        width: 161
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chtulhumove2_4
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 0
+        width: 161
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chtulhumove2_5
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 0
+        width: 161
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chtulhumove2_6
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 0
+        width: 161
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chtulhumove2_7
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 0
+        width: 161
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 0ba0138b35ff05a4aa076638694b03d4
+guid: b06c2a0559a2a2341890f73831905a8c
 TextureImporter:
   fileIDToRecycleName:
-    21300000: jockeydeath1
-    21300002: jockeydeath1_0
-    21300004: jockeydeath1_1
-    21300006: jockeydeath1_2
-    21300008: jockeydeath1_3
-    21300010: jockeydeath1_4
-    21300012: jockeydeath1_5
-    21300014: jockeydeath1_6
-    21300016: jockeydeath1_7
-    21300018: jockeydeath1_8
-    21300020: jockeydeath1_9
-    21300022: jockeydeath1_10
+    21300000: jockeydeath2
+    21300002: jockeydeath2_0
+    21300004: jockeydeath2_1
+    21300006: jockeydeath2_2
+    21300008: jockeydeath2_3
+    21300010: jockeydeath2_4
+    21300012: jockeydeath2_5
+    21300014: jockeydeath2_6
+    21300016: jockeydeath2_7
+    21300018: jockeydeath2_8
+    21300020: jockeydeath2_9
+    21300022: jockeydeath2_10
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -55,7 +55,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: jockeydeath1_0
+    - name: jockeydeath2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -65,7 +65,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_1
+    - name: jockeydeath2_1
       rect:
         serializedVersion: 2
         x: 186
@@ -75,7 +75,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_2
+    - name: jockeydeath2_2
       rect:
         serializedVersion: 2
         x: 372
@@ -85,7 +85,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_3
+    - name: jockeydeath2_3
       rect:
         serializedVersion: 2
         x: 558
@@ -95,7 +95,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_4
+    - name: jockeydeath2_4
       rect:
         serializedVersion: 2
         x: 744
@@ -105,7 +105,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_5
+    - name: jockeydeath2_5
       rect:
         serializedVersion: 2
         x: 930
@@ -115,7 +115,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_6
+    - name: jockeydeath2_6
       rect:
         serializedVersion: 2
         x: 1116
@@ -125,7 +125,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_7
+    - name: jockeydeath2_7
       rect:
         serializedVersion: 2
         x: 1302
@@ -135,7 +135,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_8
+    - name: jockeydeath2_8
       rect:
         serializedVersion: 2
         x: 1488
@@ -145,7 +145,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_9
+    - name: jockeydeath2_9
       rect:
         serializedVersion: 2
         x: 1674
@@ -155,7 +155,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: jockeydeath1_10
+    - name: jockeydeath2_10
       rect:
         serializedVersion: 2
         x: 1860
