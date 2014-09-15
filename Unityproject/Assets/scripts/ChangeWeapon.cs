@@ -42,6 +42,13 @@ public class ChangeWeapon : MonoBehaviour
 		paused = false;
 		var hero = GameObject.Find("hero").GetComponent<HeroBehavior>();
 		hero.bullet = bullet;
+
+	}
+	public void SetWeaponSound (AudioClip fire)
+	{
+		paused = false;
+		var hero = GameObject.Find("hero").GetComponent<HeroBehavior>();
+		hero.fireSound = fire;
 		var go = GameObject.Find("Window");
 		go.SetActive(false);
 	}

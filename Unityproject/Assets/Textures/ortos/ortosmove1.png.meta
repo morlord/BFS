@@ -3,6 +3,15 @@ guid: bb8cd57347ba18a459e120db548bcf5b
 TextureImporter:
   fileIDToRecycleName:
     21300000: ortosmove1
+    21300002: ortosmove1_0
+    21300004: ortosmove1_1
+    21300006: ortosmove1_2
+    21300008: ortosmove1_3
+    21300010: ortosmove1_4
+    21300012: ortosmove1_5
+    21300014: ortosmove1_6
+    21300016: ortosmove1_7
+    21300018: ortosmove1_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,23 +35,103 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 60
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: ortosmove1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 141
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ortosmove1_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 141
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ortosmove1_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 0
+        width: 141
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ortosmove1_3
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 0
+        width: 141
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ortosmove1_4
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 0
+        width: 141
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ortosmove1_5
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 0
+        width: 141
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ortosmove1_6
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 0
+        width: 141
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ortosmove1_7
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 0
+        width: 141
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
