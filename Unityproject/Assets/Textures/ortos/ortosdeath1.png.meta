@@ -46,7 +46,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 45
+  spritePixelsToUnits: 60
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -60,7 +60,7 @@ TextureImporter:
         width: 162
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ortosdeath1_1
       rect:
@@ -70,7 +70,7 @@ TextureImporter:
         width: 162
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ortosdeath1_2
       rect:
@@ -80,7 +80,7 @@ TextureImporter:
         width: 162
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ortosdeath1_3
       rect:
@@ -90,7 +90,7 @@ TextureImporter:
         width: 162
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ortosdeath1_4
       rect:
@@ -100,37 +100,37 @@ TextureImporter:
         width: 162
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ortosdeath1_5
       rect:
         serializedVersion: 2
-        x: 810
+        x: 811
         y: 0
         width: 162
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ortosdeath1_6
       rect:
         serializedVersion: 2
-        x: 972
+        x: 976
         y: 0
         width: 162
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ortosdeath1_7
       rect:
         serializedVersion: 2
-        x: 1134
+        x: 1137
         y: 0
         width: 162
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
