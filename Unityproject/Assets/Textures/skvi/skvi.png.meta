@@ -52,40 +52,40 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 63
+        width: 62
         height: 75
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: skvi_1
       rect:
         serializedVersion: 2
-        x: 66
-        y: 5
-        width: 49
-        height: 70
+        x: 62
+        y: 0
+        width: 62
+        height: 75
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: skvi_2
       rect:
         serializedVersion: 2
-        x: 126
-        y: 2
-        width: 52
-        height: 73
+        x: 124
+        y: 0
+        width: 62
+        height: 75
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: skvi_3
       rect:
         serializedVersion: 2
-        x: 187
+        x: 186
         y: 0
-        width: 59
+        width: 62
         height: 75
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

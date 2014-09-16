@@ -40,7 +40,7 @@ public class skviBehaviourScript : MonoBehaviour {
 				Destroy(rigidbody2D.collider2D);
 				gameObject.layer = 0;
 				this.GetComponent<SpriteRenderer>().sortingOrder = 0;
-				controller.BroadcastMessage("AddScore",7);
+				controller.BroadcastMessage("AddScore",5);
 			}
 		}
 	}
