@@ -98,7 +98,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 1924fdaa2f7590545b4ea05c83b998d6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.09000003
   Loop: 0
   Mute: 0
   Priority: 128
@@ -106,7 +106,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -154,7 +154,7 @@ Animator:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: df510adf0da78ad41814745f2d779909, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7319dbd0ff4b5214bafd7164908d98ed, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -177,8 +177,8 @@ MonoBehaviour:
   HP: 1
   BulletsNum: {fileID: 0}
   bullets: 5
-  reloadSound: {fileID: 8300000, guid: 1924fdaa2f7590545b4ea05c83b998d6, type: 3}
-  fireSound: {fileID: 8300000, guid: 1924fdaa2f7590545b4ea05c83b998d6, type: 3}
+  reloadSound: {fileID: 8300000, guid: f9823a650b7927d47a46079efb0e8843, type: 3}
+  fireSound: {fileID: 8300000, guid: 7d310462b0f7a1e428f364aa3c2c6181, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
