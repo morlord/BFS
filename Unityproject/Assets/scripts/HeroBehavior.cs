@@ -98,7 +98,7 @@ public class HeroBehavior : MonoBehaviour
 		{
 			if (bulletsnum > 0)
 			{
-				deltaTime = 0.3f;
+				deltaTime = 0.5f;
 				Rigidbody2D bulletInstance =
 					Instantiate(bullet, new Vector3(transform.position.x, transform.position.y + 0.4f, transform.position.z),
 						Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
