@@ -18,10 +18,10 @@ TagManager:
   Builtin Layer 5: UI
   Builtin Layer 6: 
   Builtin Layer 7: 
-  User Layer 8: button
-  User Layer 9: mobs
-  User Layer 10: 
-  User Layer 11: 
+  User Layer 8: weather
+  User Layer 9: hero
+  User Layer 10: button
+  User Layer 11: mobs
   User Layer 12: 
   User Layer 13: 
   User Layer 14: 
@@ -54,4 +54,8 @@ TagManager:
   - name: hero
     userID: 2
     uniqueID: 1072126029
+    locked: 0
+  - name: weather
+    userID: 3
+    uniqueID: 2248526379
     locked: 0
