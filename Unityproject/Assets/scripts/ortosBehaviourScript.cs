@@ -13,7 +13,7 @@ public class ortosBehaviourScript : MonoBehaviour {
 	{
 		animator = GetComponent<Animator>();
 		controller = FindObjectOfType<SpawnController>();
-		Debug.Log ("start debug");
+		//Debug.Log ("start debug");
 	}
 	
 	// Update is called once per frame
@@ -25,7 +25,7 @@ public class ortosBehaviourScript : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D collider)
 	{
-		Debug.Log ("collides");
+		//Debug.Log ("collides");
 		if (collider.gameObject.tag == "bullet")
 		{
 			HP -= 1;

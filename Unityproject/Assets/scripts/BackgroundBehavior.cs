@@ -4,7 +4,7 @@ using System.Collections;
 public class BackgroundBehavior : MonoBehaviour
 {
 
-    private SpriteRenderer renderer;
+    private new SpriteRenderer renderer;
     private Color curColor;
     public float alpha=1;
     public float curAlpha;

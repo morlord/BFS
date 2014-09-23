@@ -9,11 +9,11 @@ public class HeroBehavior : MonoBehaviour
     public Joystick  RJoystick;
 	private bool isLive = true;
 	public int HP;
-    Vector2 inputForce;
+    //Vector2 inputForce;
 	public UnityEngine.UI.Text BulletsNum;
 	public int bullets;
 	private bool isReloading = false;
-	private float reloadTime;
+	//private float reloadTime;
 	public AudioClip reloadSound;
 	public AudioClip fireSound;
 
@@ -21,7 +21,7 @@ public class HeroBehavior : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-        inputForce = new Vector2(0f, 0f);
+        //inputForce = new Vector2(0f, 0f);
 		anim = GetComponent<Animator>();
 		audio.clip = reloadSound;
 		
@@ -111,14 +111,15 @@ public class HeroBehavior : MonoBehaviour
 		}
 		if (bulletsnum <= 0 && !isReloading)
 		{
+			audio.clip = reloadSound;
 			isReloading = true;
 			audio.Play();
-			reloadTime = reloadSound.length;
+			//reloadTime = reloadSound.length;
 		}
 		if(isReloading)
 		{
-			reloadTime -= Mathf.Abs(deltaTime);
-			if (reloadTime <= 0)
+			//reloadTime -= Mathf.Abs(deltaTime);
+			if (!audio.isPlaying)
 			{
 				isReloading = false;
 				BulletsNum.text = bullets.ToString();

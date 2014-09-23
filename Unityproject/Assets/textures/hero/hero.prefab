@@ -28,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.14169979, y: 1.11430001, z: 0}
+  m_LocalPosition: {x: 7.4387002, y: 1.11430001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -177,8 +177,8 @@ MonoBehaviour:
   HP: 1
   BulletsNum: {fileID: 0}
   bullets: 5
-  reloadSound: {fileID: 8300000, guid: 1924fdaa2f7590545b4ea05c83b998d6, type: 3}
-  fireSound: {fileID: 8300000, guid: 1924fdaa2f7590545b4ea05c83b998d6, type: 3}
+  reloadSound: {fileID: 8300000, guid: f9823a650b7927d47a46079efb0e8843, type: 3}
+  fireSound: {fileID: 8300000, guid: 7d310462b0f7a1e428f364aa3c2c6181, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

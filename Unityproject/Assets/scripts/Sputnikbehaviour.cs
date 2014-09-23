@@ -5,7 +5,7 @@ public class Sputnikbehaviour : MonoBehaviour {
 
 	public float speed;
 	private Animator animator;
-	private bool isLive = true;
+	//private bool isLive = true;
 	private SpawnController controller;
 	public int HP;
 	// Use this for initialization
@@ -14,7 +14,7 @@ public class Sputnikbehaviour : MonoBehaviour {
 		StartCoroutine(StartLoader());
 		animator = GetComponent<Animator>();
 		controller = FindObjectOfType<SpawnController>();
-		Debug.Log ("start debug");
+		//Debug.Log ("start debug");
 
 	}
 	
@@ -26,7 +26,7 @@ public class Sputnikbehaviour : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D collider)
 	{
-		Debug.Log ("collides");
+		//Debug.Log ("collides");
 		if (collider.gameObject.tag == "bullet")
 		{
 			HP -= 1;
@@ -36,7 +36,7 @@ public class Sputnikbehaviour : MonoBehaviour {
 				animator.SetBool("isLive", false);
 				rigidbody2D.velocity = Vector2.zero;
 				transform.position.Set(transform.position.x, transform.position.y, 0);
-				isLive = false;
+				//isLive = false;
 				DestroyObject(collider.gameObject);
 				Destroy(rigidbody2D.collider2D);
 				gameObject.layer = 0;
