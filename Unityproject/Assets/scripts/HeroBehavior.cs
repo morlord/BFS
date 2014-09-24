@@ -84,47 +84,40 @@ public class HeroBehavior : MonoBehaviour
 		for (int i = 0; i < touchC; i++)
 		{
 			var touch = Input.GetTouch(i);
-			if ((Input.GetKey(KeyCode.Space) || touch.position.x <= Screen.currentResolution.width/2) && deltaTime < 0)
+			var bulletsnum = int.Parse(BulletsNum.text);
+			if ((Input.GetKey(KeyCode.Space) || touch.position.x <= Screen.currentResolution.width / 2) && (deltaTime < 0) && !isReloading)
 			{
-				deltaTime = 0.3f;
-				Rigidbody2D bulletInstance =
-					Instantiate(bullet, new Vector3(transform.position.x, transform.position.y + 0.4f, transform.position.z),
-						Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
-				if (bulletInstance != null) bulletInstance.velocity = Vector2.right*-1;
+				if (bulletsnum > 0)
+				{
+					deltaTime = 0.5f;
+					Rigidbody2D bulletInstance =
+						Instantiate(bullet, new Vector3(transform.position.x, transform.position.y + 0.4f, transform.position.z),
+							Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
+					if (bulletInstance != null) bulletInstance.velocity = Vector2.right * -1;
+					audio.clip = fireSound;
+					audio.Play();
+					bulletsnum -= 1;
+					BulletsNum.text = bulletsnum.ToString();
+				}
 			}
-		}
-		var bulletsnum = int.Parse(BulletsNum.text);
-		if ((Input.GetKey(KeyCode.Space)) && (deltaTime < 0) && !isReloading)
-		{
-			if (bulletsnum > 0)
+			if (bulletsnum <= 0 && !isReloading)
 			{
-				deltaTime = 0.5f;
-				Rigidbody2D bulletInstance =
-					Instantiate(bullet, new Vector3(transform.position.x, transform.position.y + 0.4f, transform.position.z),
-						Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
-				if (bulletInstance != null) bulletInstance.velocity = Vector2.right*-1;
-				audio.clip = fireSound;
+				audio.clip = reloadSound;
+				isReloading = true;
 				audio.Play();
-				bulletsnum -= 1;
-				BulletsNum.text = bulletsnum.ToString();
+				//reloadTime = reloadSound.length;
 			}
-		}
-		if (bulletsnum <= 0 && !isReloading)
-		{
-			audio.clip = reloadSound;
-			isReloading = true;
-			audio.Play();
-			//reloadTime = reloadSound.length;
-		}
-		if(isReloading)
-		{
-			//reloadTime -= Mathf.Abs(deltaTime);
-			if (!audio.isPlaying)
+			if (isReloading)
 			{
-				isReloading = false;
-				BulletsNum.text = bullets.ToString();
+				//reloadTime -= Mathf.Abs(deltaTime);
+				if (!audio.isPlaying)
+				{
+					isReloading = false;
+					BulletsNum.text = bullets.ToString();
+				}
 			}
 		}
+		
 
 	}
 }
