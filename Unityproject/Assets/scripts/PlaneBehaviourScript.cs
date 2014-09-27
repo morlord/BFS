@@ -11,7 +11,7 @@ public class PlaneBehaviourScript : MonoBehaviour {
 	void Start()
 	{
 		animator = GetComponent<Animator>();
-		Debug.Log ("start debug");
+		//Debug.Log ("start debug");
 		StartCoroutine(StartLoader());
 		
 	}

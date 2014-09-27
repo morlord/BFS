@@ -1,12 +1,19 @@
-﻿using System.Globalization;
+﻿using System;
+using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Xml;
 using System.Xml.Linq;
+using System.Xml.Serialization;
 using System.Xml.XPath;
+using Assets.scripts;
 using UnityEngine;
+using UnityEngine.Serialization;
 using System.Collections;
+using Random = UnityEngine.Random;
 
+[Serializable()]
 public class SpawnController : MonoBehaviour
 {
 
@@ -68,6 +75,11 @@ public class SpawnController : MonoBehaviour
 					f.WriteLine(_score);
 					f.Close();
 				}
+				
+				var heroB = GameObject.FindObjectOfType<HeroBehavior>();
+				var hero = new Hero(heroB);
+				DontDestroyOnLoad(heroB);
+				//Serializator.Serialize(hero,"heroSave.xml");
 				Application.LoadLevel(nextlvl);
 			}
 	    }

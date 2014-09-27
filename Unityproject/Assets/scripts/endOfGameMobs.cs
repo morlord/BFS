@@ -17,6 +17,7 @@ public class endOfGameMobs : MonoBehaviour {
 	{
 		if (collider2.gameObject.tag == "mob")
 		{
+			Destroy(FindObjectOfType<HeroBehavior>());
 			Application.LoadLevel(3);
 			DestroyObject(collider2.gameObject);
 			//k++;
