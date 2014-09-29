@@ -1972,6 +1972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 7
+  anim: {fileID: 0}
   bullet: {fileID: 5000000, guid: ca64d29531f1721489734ee863ff98d2, type: 2}
   RJoystick: {fileID: 36208967}
   HP: 1
