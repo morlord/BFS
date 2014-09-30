@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using Assets.scripts;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HeroBehavior : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class HeroBehavior : MonoBehaviour
 	private bool isLive = true;
 	public int HP;
     //Vector2 inputForce;
-	public UnityEngine.UI.Text BulletsNum;
+	protected UnityEngine.UI.Text BulletsNum;
 	public int bullets;
 	private int bulletsNum;
 	private bool isReloading = false;
@@ -27,21 +28,30 @@ public class HeroBehavior : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		if (!LoadFromFile())
-		{
 			anim = GetComponent<Animator>();
 			audio.clip = reloadSound;
 			deltaTime = DeltaTime;
 			bulletsNum = bullets;
+			var texts = FindObjectsOfType<Text>();
+			BulletsNum = texts.Single(a => a.name == "bullets");
 			BulletsNum.text = bulletsNum.ToString();
-		}
+	}
+
+	void OnEnable()
+	{
+
+		bulletsNum = bullets;
+		var texts = FindObjectsOfType<Text>();
+		BulletsNum = texts.Single(a => a.name == "bullets");
+		BulletsNum.text = bulletsNum.ToString();
 	}
 
 	private bool LoadFromFile()
 	{
 		if (File.Exists("heroSave.xml"))
 		{
-			var hero = Serializator.Deserialize("heroSave.xml");
+			var hero = new Hero();
+			Serializator.Deserialize("heroSave.xml",out hero);
 			bullet = hero.bullet as Rigidbody2D;
 			bullets = hero.bullets;
 			DeltaTime = hero.deltaTime;

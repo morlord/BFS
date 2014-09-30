@@ -17,16 +17,31 @@ namespace Assets.scripts
 			fs.Close();
 		}
 
-		public static Hero Deserialize(string datapath)
+		public static void Deserialize(string datapath,out Hero hero)
 		{
 			XmlSerializer serializer = new XmlSerializer(typeof(Hero));
 
 			FileStream fs = new FileStream(datapath, FileMode.Open);
-			Hero state = (Hero)serializer.Deserialize(fs);
+			hero = (Hero)serializer.Deserialize(fs);
 			fs.Close();
+			
+		}
 
-			return state;
+		public static void Serialize(Stats hero, string datapath)
+		{
+			XmlSerializer serial = new XmlSerializer(typeof(Hero));
+			FileStream fs = new FileStream(datapath, FileMode.Create);
+			serial.Serialize(fs, hero);
+			fs.Close();
+		}
 
+		public static void Deserialize(string datapath,out Stats stats)
+		{
+			XmlSerializer serializer = new XmlSerializer(typeof(Hero));
+
+			FileStream fs = new FileStream(datapath, FileMode.Open);
+			stats = (Stats)serializer.Deserialize(fs);
+			fs.Close();
 		}
 	}
 }

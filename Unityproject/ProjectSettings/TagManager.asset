@@ -10,6 +10,7 @@ TagManager:
   - acid
   - plasma
   - rocket
+  - pointsUI
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Xml;
 using System.Xml.Linq;
-using System.Xml.Serialization;
-using System.Xml.XPath;
 using Assets.scripts;
 using UnityEngine;
-using UnityEngine.Serialization;
-using System.Collections;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 [Serializable()]
@@ -18,17 +12,17 @@ public class SpawnController : MonoBehaviour
 {
 
 	public int Score, Money;
-    public float SpawnTime;
-    public GameObject[] MobsArray;
+	public float SpawnTime;
+	public GameObject[] MobsArray;
 	public GameObject Boss;
-    public Transform[] SpawnLocationArray;
-    public UnityEngine.UI.Text ScoreText;
-    private double _score;
+	public Transform[] SpawnLocationArray;
+	public UnityEngine.UI.Text ScoreText;
+	private double _score;
 	public bool IsBoss;
 	private XDocument document;
 	private int nextlvl;
 	// Use this for initialization
-	void Start()
+	private void Start()
 	{
 		if (Application.loadedLevel == 1)
 			File.Delete("scores.txt");
@@ -40,26 +34,26 @@ public class SpawnController : MonoBehaviour
 			f.Close();
 		}
 		var levelsAsset = Resources.Load<TextAsset>("levels");
-		document=XDocument.Parse(levelsAsset.text);
+		document = XDocument.Parse(levelsAsset.text);
 		var node = document.Root;
 		var t = node.Descendants("level").Single(a => a.Attribute("sceneid").Value == Application.loadedLevel.ToString());
 		nextlvl = int.Parse(t.Attribute("nextlvl").Value);
-	Invoke("CreateMob",SpawnTime);
-	    ScoreText.text = _score.ToString();
+		Invoke("CreateMob", SpawnTime);
+		ScoreText.text = _score.ToString();
 	}
 
-    void CreateMob()
-    {
-        int randomMob = Random.Range(0, MobsArray.Count());
+	private void CreateMob()
+	{
+		int randomMob = Random.Range(0, MobsArray.Count());
 
-        int randomSpawn = Random.Range(0, SpawnLocationArray.Count());
+		int randomSpawn = Random.Range(0, SpawnLocationArray.Count());
 
-        Instantiate(MobsArray[randomMob], SpawnLocationArray[randomSpawn].position,
-            SpawnLocationArray[randomSpawn].rotation);
-	    if (_score >= Score)
-	    {
-			if(IsBoss)
-				Invoke("CreateBoss",7);
+		Instantiate(MobsArray[randomMob], SpawnLocationArray[randomSpawn].position,
+			SpawnLocationArray[randomSpawn].rotation);
+		if (_score >= Score)
+		{
+			if (IsBoss)
+				Invoke("CreateBoss", 7);
 			else
 			{
 				if (File.Exists("scores.txt"))
@@ -75,40 +69,48 @@ public class SpawnController : MonoBehaviour
 					f.WriteLine(_score);
 					f.Close();
 				}
-				
+
 				var heroB = GameObject.FindObjectOfType<HeroBehavior>();
-				var hero = new Hero(heroB);
 				DontDestroyOnLoad(heroB);
+				//var texts = FindObjectsOfType<Text>();
+				//ScoreText = texts.Single(a => a.name == "bullets");
 				//Serializator.Serialize(hero,"heroSave.xml");
 				Application.LoadLevel(nextlvl);
 			}
-	    }
+		}
 		else
-			Invoke("CreateMob",SpawnTime);
-    }
+			Invoke("CreateMob", SpawnTime);
+	}
 
-	void CreateBoss()
+	void SaveStats()
+	{
+		var texts = FindObjectsOfType<Text>();
+		ScoreText = texts.Single(a => a.name == "bullets");
+		//Serializator.Serialize(hero, "heroSave.xml");
+	}
+
+	private void CreateBoss()
 	{
 		//int randomSpawn = Random.Range(0, SpawnLocationArray.Count());
 
 		Instantiate(Boss, SpawnLocationArray[4].position,
 			SpawnLocationArray[4].rotation);
 	}
+
 	// Update is called once per frame
-	void Update ()
+	private void Update()
 	{
 	}
 
-    void AddScore(object num)
-    {
-        AddScore((int)num);
-    }
+	private void AddScore(object num)
+	{
+		AddScore((int) num);
+	}
 
-    void AddScore(int num)
-    {
-        _score += num;
-	    Money += num;
-        ScoreText.text = _score.ToString();
-    }
-
+	private void AddScore(int num)
+	{
+		_score += num;
+		Money += num;
+		ScoreText.text = _score.ToString();
+	}
 }
