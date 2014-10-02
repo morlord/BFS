@@ -17,6 +17,7 @@ public class SpawnController : MonoBehaviour
 	public GameObject Boss;
 	public Transform[] SpawnLocationArray;
 	public UnityEngine.UI.Text ScoreText;
+	public GameObject EndGameMenu;
 	private double _score;
 	public bool IsBoss;
 	private XDocument document;
@@ -40,6 +41,8 @@ public class SpawnController : MonoBehaviour
 		nextlvl = int.Parse(t.Attribute("nextlvl").Value);
 		Invoke("CreateMob", SpawnTime);
 		ScoreText.text = _score.ToString();
+		var hero = FindObjectOfType<HeroBehavior>();
+		hero.BroadcastMessage("SetBullets");
 	}
 
 	private void CreateMob()
@@ -72,10 +75,8 @@ public class SpawnController : MonoBehaviour
 
 				var heroB = GameObject.FindObjectOfType<HeroBehavior>();
 				DontDestroyOnLoad(heroB);
-				//var texts = FindObjectsOfType<Text>();
-				//ScoreText = texts.Single(a => a.name == "bullets");
-				//Serializator.Serialize(hero,"heroSave.xml");
-				Application.LoadLevel(nextlvl);
+				Invoke("ShowEnd",11);
+				//Application.LoadLevel(nextlvl);
 			}
 		}
 		else
@@ -102,9 +103,9 @@ public class SpawnController : MonoBehaviour
 	{
 	}
 
-	private void AddScore(object num)
+	void ShowEnd()
 	{
-		AddScore((int) num);
+		EndGameMenu.SetActive(true);
 	}
 
 	private void AddScore(int num)
