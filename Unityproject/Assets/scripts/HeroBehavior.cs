@@ -39,11 +39,6 @@ public class HeroBehavior : MonoBehaviour
 
 	void OnEnable()
 	{
-
-		bulletsNum = bullets;
-		var texts = FindObjectsOfType<Text>();
-		BulletsNum = texts.Single(a => a.name == "bullets");
-		BulletsNum.text = bulletsNum.ToString();
 	}
 
 	private bool LoadFromFile()
@@ -155,7 +150,7 @@ public class HeroBehavior : MonoBehaviour
 				BulletsNum.text = bulletsNum.ToString();
 			}
 		}
-		if (bulletsNum <= 0 && !isReloading)
+		if (bulletsNum <= 0 && !isReloading && !audio.isPlaying)
 		{
 			audio.clip = reloadSound;
 			isReloading = true;
@@ -172,5 +167,13 @@ public class HeroBehavior : MonoBehaviour
 				BulletsNum.text = bulletsNum.ToString();
 			}
 		}
+	}
+
+	void SetBullets()
+	{
+		bulletsNum = bullets;
+		var texts = FindObjectsOfType<Text>();
+		BulletsNum = texts.Single(a => a.name == "bullets");
+		BulletsNum.text = bulletsNum.ToString();
 	}
 }

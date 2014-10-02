@@ -2160,7 +2160,7 @@ MonoBehaviour:
   - {fileID: 806076167}
   - {fileID: 376222372}
   - {fileID: 393273358}
-  ScoreText: {fileID: 0}
+  ScoreText: {fileID: 1828840771}
   IsBoss: 1
 --- !u!4 &1201055763
 Transform:
@@ -4775,7 +4775,7 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Priority: -1
+  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
