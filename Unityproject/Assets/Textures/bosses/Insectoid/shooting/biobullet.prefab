@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 212: {fileID: 21200000}
+  - 50: {fileID: 5000000}
+  - 60: {fileID: 6000000}
+  - 95: {fileID: 9500000}
+  m_Layer: 9
+  m_Name: biobullet
+  m_TagString: plasma
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.13049173, y: -.848979652, z: 2.20920247e-05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!50 &5000000
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Mass: 9.99999975e-05
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!60 &6000000
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Poly:
+    m_Paths:
+    - - {x: -4.71111107, y: -.200000003}
+      - {x: -4.17777777, y: -.0222222228}
+      - {x: -4.11111116, y: .0444444455}
+      - {x: -4.13333321, y: .111111112}
+      - {x: -4.31111097, y: .177777782}
+      - {x: -4.9333334, y: .422222227}
+      - {x: -4.82222223, y: .48888889}
+      - {x: -4.84444427, y: .555555582}
+      - {x: -5.48888874, y: .800000012}
+      - {x: -5.9333334, y: .800000012}
+      - {x: -6.33333349, y: .51111114}
+      - {x: -6.42222214, y: .244444445}
+      - {x: -6.42222214, y: -.155555561}
+      - {x: -6.35555553, y: -.533333361}
+      - {x: -6.17777777, y: -.600000024}
+      - {x: -5.88888884, y: -.711111128}
+      - {x: -5.4666667, y: -.711111128}
+      - {x: -5.15555573, y: -.622222245}
+      - {x: -4.66666651, y: -.311111122}
+      - {x: -4.68888903, y: -.244444445}
+    - - {x: -6.55555534, y: .444444448}
+      - {x: -6.64444447, y: .244444445}
+      - {x: -6.64444447, y: -.333333343}
+      - {x: -6.55555534, y: -.51111114}
+      - {x: -6.48888874, y: -.51111114}
+      - {x: -6.44444466, y: -.48888889}
+      - {x: -6.42222214, y: -.355555564}
+      - {x: -6.42222214, y: .377777785}
+      - {x: -6.48888874, y: .444444448}
+--- !u!95 &9500000
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0ae588d778863104bb22c6059bfc4d3d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!212 &21200000
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 1072126029
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 8bcf8cef383642542a8f8469c888377e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
