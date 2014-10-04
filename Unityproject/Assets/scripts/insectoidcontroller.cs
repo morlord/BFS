@@ -23,7 +23,7 @@ public class insectoidcontroller : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate()
 	{
-		if(!isHurt&&isLive)
+		if(!isHurt && isLive)
 			rigidbody2D.velocity = Vector2.zero;
 		if (isLive && isHurt)
 		   rigidbody2D.velocity = Vector2.right * speed;

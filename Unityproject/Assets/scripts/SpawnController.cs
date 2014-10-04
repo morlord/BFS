@@ -21,7 +21,7 @@ public class SpawnController : MonoBehaviour
 	private double _score;
 	public bool IsBoss;
 	private XDocument document;
-	private int nextlvl;
+//	private int nextlvl;
 	// Use this for initialization
 	private void Start()
 	{
@@ -34,11 +34,11 @@ public class SpawnController : MonoBehaviour
 			_score = int.Parse(f.ReadLine());
 			f.Close();
 		}
-		var levelsAsset = Resources.Load<TextAsset>("levels");
-		document = XDocument.Parse(levelsAsset.text);
-		var node = document.Root;
-		var t = node.Descendants("level").Single(a => a.Attribute("sceneid").Value == Application.loadedLevel.ToString());
-		nextlvl = int.Parse(t.Attribute("nextlvl").Value);
+		//var levelsAsset = Resources.Load<TextAsset>("levels");
+		//document = XDocument.Parse(levelsAsset.text);
+		//var node = document.Root;
+		//var t = node.Descendants("level").Single(a => a.Attribute("sceneid").Value == Application.loadedLevel.ToString());
+		//nextlvl = int.Parse(t.Attribute("nextlvl").Value);
 		Invoke("CreateMob", SpawnTime);
 		ScoreText.text = _score.ToString();
 		var hero = FindObjectOfType<HeroBehavior>();
@@ -73,9 +73,7 @@ public class SpawnController : MonoBehaviour
 					f.Close();
 				}
 
-				var heroB = GameObject.FindObjectOfType<HeroBehavior>();
-				DontDestroyOnLoad(heroB);
-				Invoke("ShowEnd",11);
+				Invoke("ShowEnd",8);
 				//Application.LoadLevel(nextlvl);
 			}
 		}

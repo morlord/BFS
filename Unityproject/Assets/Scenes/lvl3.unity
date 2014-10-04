@@ -1271,7 +1271,8 @@ MonoBehaviour:
   - {fileID: 1912986864}
   - {fileID: 1705237423}
   - {fileID: 1273215643}
-  ScoreText: {fileID: 0}
+  ScoreText: {fileID: 1627475266}
+  EndGameMenu: {fileID: 0}
   IsBoss: 1
 --- !u!4 &424703508
 Transform:
@@ -3139,7 +3140,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 0cd2aa6bfce95f54a94ca1cccb2b4f41, type: 2}
       propertyPath: ScoreText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1627475266}
     - target: {fileID: 11400000, guid: 0cd2aa6bfce95f54a94ca1cccb2b4f41, type: 2}
       propertyPath: IsBoss
       value: 1

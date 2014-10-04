@@ -3,13 +3,13 @@ using System.Collections;
 
 public class backgroundlvl2 : MonoBehaviour {
 	
-	private Animator animator;
+	//private Animator animator;
 	public Rigidbody2D acid;
 	private int timelimit=1;
 	// Use this for initialization
 	void Start()
 	{
-		animator = GetComponent<Animator>();
+		//animator = GetComponent<Animator>();
 		//Debug.Log ("start debug");
 		StartCoroutine(StartLoader());
 
