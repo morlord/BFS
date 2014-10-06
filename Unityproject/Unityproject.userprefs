@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\insectoidcontroller.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\insectoidcontroller.cs">
     <Files>
-      <File FileName="Assets\insectoidcontroller.cs" Line="30" Column="3" />
-      <File FileName="Assets\insectoidcontroller.cs" Line="98" Column="1" />
+      <File FileName="Assets\scripts\insectoidcontroller.cs" Line="98" Column="1" />
+      <File FileName="Assets\scripts\insectoidcontroller.cs" Line="28" Column="48" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

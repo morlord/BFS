@@ -20,6 +20,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 1
     m_Controller: {fileID: 9100000}
+  - m_Name: isMove
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 1
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
@@ -62,7 +68,7 @@ Transition:
   m_SrcState: {fileID: 110262740}
   m_DstState: {fileID: 110241914}
   m_TransitionDuration: .100000001
-  m_TransitionOffset: 0
+  m_TransitionOffset: .0405149683
   m_Conditions:
   - m_ConditionMode: 5
     m_ConditionEvent: isLive
@@ -169,13 +175,6 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110240159}
-      second: []
-    data:
-      first: {fileID: 110241914}
-      second:
-      - {fileID: 110189515}
-    data:
       first: {fileID: 110200000}
       second:
       - {fileID: 110100000}
@@ -183,6 +182,13 @@ StateMachine:
       first: {fileID: 110262740}
       second:
       - {fileID: 110125954}
+    data:
+      first: {fileID: 110241914}
+      second:
+      - {fileID: 110189515}
+    data:
+      first: {fileID: 110240159}
+      second: []
   m_MotionSetCount: 1
-  m_AnyStatePosition: {x: -48, y: 72, z: 0}
+  m_AnyStatePosition: {x: 48, y: 48, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

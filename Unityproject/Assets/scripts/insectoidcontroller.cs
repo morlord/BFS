@@ -10,6 +10,8 @@ public class insectoidcontroller : MonoBehaviour {
 	public Rigidbody2D biobullet;
 	private bool isLive = true;
 	private bool isHurt = true;
+	private bool isMove = true;
+
 	public int HP;
 	private int timelimit=1;
 	private int timelimit1=1;
@@ -23,10 +25,7 @@ public class insectoidcontroller : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate()
 	{
-		if(!isHurt && isLive)
-			rigidbody2D.velocity = Vector2.zero;
-		if (isLive && isHurt)
-		   rigidbody2D.velocity = Vector2.right * speed;
+		rigidbody2D.velocity = Vector2.right * speed;
 
 	}
 	
@@ -40,12 +39,13 @@ public class insectoidcontroller : MonoBehaviour {
 			{
 
 				animator.SetBool("isHurt", false);
-				rigidbody2D.velocity = Vector2.right * speed;
 				transform.position.Set(transform.position.x, transform.position.y, 0);
 				isHurt = false;
 				DestroyObject(collider.gameObject);
-				rigidbody2D.collider2D.enabled = false;
+				animator.SetBool ("isMove", false);
+				isMove = false;
 			}
+
 			if (HP <= 0)
 			{
 				animator.SetBool("isLive", false);
@@ -86,12 +86,12 @@ public class insectoidcontroller : MonoBehaviour {
 				plasma.velocity = Vector2.right;
 			timelimit = Random.Range (100, 300);
 		}
-		if (timelimit1 == 1 && !isHurt && isLive) 
+		/*if (timelimit1 == 1 && !isHurt && isLive) 
 		{
 			Rigidbody2D biobulletInstance = Instantiate (biobullet, new Vector3 (transform.position.x + 9.0f, transform.position.y + 0.6f, transform.position.z), Quaternion.Euler (new Vector3 (0, 0, 0))) as Rigidbody2D;
 			if (biobulletInstance != null)
 				biobullet.velocity = Vector2.right;
 			timelimit1 = Random.Range (100, 300);
-		}
+		}*/
 	}
 }
