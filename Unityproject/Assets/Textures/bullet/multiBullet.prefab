@@ -12,6 +12,7 @@ GameObject:
   - 60: {fileID: 6000000}
   - 114: {fileID: 11400000}
   - 50: {fileID: 5000000}
+  - 95: {fileID: 9500002}
   m_Layer: 0
   m_Name: bullet
   m_TagString: bullet
@@ -31,6 +32,7 @@ GameObject:
   - 60: {fileID: 6000002}
   - 114: {fileID: 11400002}
   - 50: {fileID: 5000002}
+  - 95: {fileID: 9500004}
   m_Layer: 0
   m_Name: bullet
   m_TagString: bullet
@@ -50,6 +52,7 @@ GameObject:
   - 60: {fileID: 6000004}
   - 114: {fileID: 11400004}
   - 50: {fileID: 5000004}
+  - 95: {fileID: 9500000}
   m_Layer: 0
   m_Name: bullet
   m_TagString: bullet
@@ -65,6 +68,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400006}
+  - 50: {fileID: 5000006}
   m_Layer: 0
   m_Name: multiBullet
   m_TagString: Untagged
@@ -129,9 +133,9 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mass: 1
+  m_Mass: 9.99999975e-05
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_FixedAngle: 0
   m_IsKinematic: 0
@@ -144,9 +148,9 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Mass: 1
+  m_Mass: 9.99999975e-05
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_FixedAngle: 0
   m_IsKinematic: 0
@@ -159,9 +163,24 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
-  m_Mass: 1
+  m_Mass: 9.99999975e-05
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!50 &5000006
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Mass: 9.99999975e-05
+  m_LinearDrag: 0
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_FixedAngle: 0
   m_IsKinematic: 0
@@ -216,6 +235,51 @@ PolygonCollider2D:
       - {x: -.104731083, y: -.0135946274}
       - {x: .176291227, y: -.0132087469}
       - {x: .176478386, y: .0152213573}
+--- !u!95 &9500000
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 01d540c0a72114e4683a124fc3704d8a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &9500002
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 81d61c307f5a1ab4bb004b9679901a3f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &9500004
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 409a6a194fe7858498857ac4a03f989b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -227,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b66929bad92cd4bb55ba0408ebe6d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 10
   LifeTime: .5
 --- !u!114 &11400002
 MonoBehaviour:
@@ -240,7 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b66929bad92cd4bb55ba0408ebe6d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 10
   LifeTime: .5
 --- !u!114 &11400004
 MonoBehaviour:
@@ -253,7 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b66929bad92cd4bb55ba0408ebe6d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 10
   LifeTime: .5
 --- !u!212 &21200000
 SpriteRenderer:

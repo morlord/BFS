@@ -10,10 +10,10 @@ GameObject:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
   - 60: {fileID: 6000000}
-  - 114: {fileID: 11400000}
   - 50: {fileID: 5000000}
-  m_Layer: 0
-  m_Name: bullet
+  - 114: {fileID: 11400000}
+  m_Layer: 11
+  m_Name: ARbullet
   m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.13013601, y: -1.15442884, z: 0}
+  m_LocalPosition: {x: 2.91350007, y: -1.68400002, z: 2.09810005e-05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -37,9 +37,9 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mass: 1
+  m_Mass: 9.99999975e-05
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_FixedAngle: 0
   m_IsKinematic: 0
@@ -57,11 +57,12 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_Poly:
     m_Paths:
-    - - {x: -.100167036, y: .0151275396}
-      - {x: -.174395323, y: -.00188708305}
-      - {x: -.104731083, y: -.0135946274}
-      - {x: .176291227, y: -.0132087469}
-      - {x: .176478386, y: .0152213573}
+    - - {x: -.386666656, y: .113333337}
+      - {x: -.553333342, y: .0533333346}
+      - {x: -.553333342, y: 0}
+      - {x: -.386666656, y: -.0799999982}
+      - {x: .419999987, y: -.0799999982}
+      - {x: .419999987, y: .113333337}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,8 +74,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b66929bad92cd4bb55ba0408ebe6d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
-  LifeTime: .5
+  speed: 15
+  LifeTime: 5
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -95,7 +96,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 37398665
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: b58979ddd5bd30e4696c31d46edba2e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b37368212a5bc1c40a980b2c51f4b54c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

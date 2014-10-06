@@ -25,6 +25,7 @@ public class HeroBehavior : MonoBehaviour
 	public AudioClip fireSound;
 	public float DeltaTime;
     private float deltaTime = 0.5f;
+	//public int Dmg;
 	// Use this for initialization
 	void Start ()
 	{
@@ -124,6 +125,7 @@ public class HeroBehavior : MonoBehaviour
 				if (bulletsNum > 0)
 				{
 					deltaTime = DeltaTime;
+
 					Rigidbody2D bulletInstance =
 						Instantiate(bullet, new Vector3(transform.position.x, transform.position.y + 0.4f, transform.position.z),
 							Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
@@ -140,6 +142,7 @@ public class HeroBehavior : MonoBehaviour
 			if (bulletsNum > 0)
 			{
 				deltaTime = DeltaTime;
+
 				Rigidbody2D bulletInstance =
 					Instantiate(bullet, new Vector3(transform.position.x, transform.position.y + 0.4f, transform.position.z),
 						Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;

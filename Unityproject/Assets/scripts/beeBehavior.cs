@@ -9,11 +9,13 @@ public class beeBehavior : MonoBehaviour
     private bool isLive = true;
     private SpawnController controller;
     public int HP;
+	public int dmg;
     // Use this for initialization
     void Start()
     {
         animator = GetComponent<Animator>();
         controller = FindObjectOfType<SpawnController>();
+
 		//Debug.Log ("start debug");
     }
 
@@ -29,7 +31,9 @@ public class beeBehavior : MonoBehaviour
 		//Debug.Log ("collides");
         if (collider.gameObject.tag == "bullet")
         {
-            HP -= 1;
+			//dmg = GameObject.Find("Hero").GetComponent<HeroBehavior>().Dmg;
+            //HP -= dmg;
+			HP -=1;
             DestroyObject(collider.gameObject);
             if (HP <= 0)
             {

@@ -10,12 +10,12 @@ GameObject:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
   - 60: {fileID: 6000000}
-  - 95: {fileID: 9500000}
   - 114: {fileID: 11400000}
   - 50: {fileID: 5000000}
+  - 95: {fileID: 9500000}
   m_Layer: 9
-  m_Name: beemove 2
-  m_TagString: mob
+  m_Name: bfgbullet
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.40417767, y: -2.39734149, z: 0}
+  m_LocalPosition: {x: -7.4387002, y: -1.11430001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -38,11 +38,11 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mass: 1
+  m_Mass: 9.99999975e-05
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: 0
   m_GravityScale: 0
-  m_FixedAngle: 1
+  m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -58,44 +58,19 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_Poly:
     m_Paths:
-    - - {x: -.212765947, y: -.808510602}
-      - {x: -.148936167, y: -.787234008}
-      - {x: -.148936167, y: -.723404229}
-      - {x: 0, y: -.744680822}
-      - {x: .170212761, y: -.829787195}
-      - {x: .276595742, y: -.829787195}
-      - {x: .425531894, y: -.702127635}
-      - {x: .446808487, y: -.638297856}
-      - {x: .404255301, y: -.553191483}
-      - {x: .425531894, y: -.595744669}
-      - {x: .510638297, y: -.680851042}
-      - {x: .425531894, y: -.723404229}
-      - {x: .446808487, y: -.787234008}
-      - {x: .53191489, y: -.808510602}
-      - {x: .617021263, y: -.680851042}
-      - {x: .595744669, y: -.617021263}
-      - {x: .489361674, y: -.319148928}
-      - {x: .829787195, y: -.23404254}
-      - {x: .99999994, y: -.106382973}
-      - {x: .99999994, y: .106382973}
-      - {x: .829787195, y: .276595742}
-      - {x: .404255301, y: .404255301}
-      - {x: .0638297871, y: .723404229}
-      - {x: -.0638297871, y: .829787195}
-      - {x: -.574468076, y: .829787195}
-      - {x: -.765957415, y: .659574449}
-      - {x: -.723404229, y: .510638297}
-      - {x: -.297872335, y: .446808487}
-      - {x: -.787234008, y: .446808487}
-      - {x: -.978723347, y: .23404254}
-      - {x: -.978723347, y: .0212765951}
-      - {x: -.936170161, y: -.106382973}
-      - {x: -.851063788, y: -.148936167}
-      - {x: -.723404229, y: -.53191489}
-      - {x: -.510638297, y: -.829787195}
-      - {x: -.361702114, y: -.829787195}
-      - {x: -.297872335, y: -.765957415}
-      - {x: -.297872335, y: -.702127635}
+    - - {x: .688888907, y: .533333361}
+      - {x: .266666681, y: .800000012}
+      - {x: -.333333343, y: .800000012}
+      - {x: -.733333349, y: .48888889}
+      - {x: -.822222233, y: .333333343}
+      - {x: -.822222233, y: -.177777782}
+      - {x: -.75555557, y: -.422222227}
+      - {x: -.422222227, y: -.644444466}
+      - {x: -.177777782, y: -.666666687}
+      - {x: .177777782, y: -.666666687}
+      - {x: .444444448, y: -.555555582}
+      - {x: .75555557, y: -.177777782}
+      - {x: .75555557, y: .311111122}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -105,7 +80,7 @@ Animator:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 04fd11b2f9f9e2c4fb7dab0ef55cddd2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 15a14411001689c4788066aef7459f6b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -119,12 +94,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ba726a961dcc5146b3cdbd8d51f69f5, type: 3}
+  m_Script: {fileID: 11500000, guid: d1b66929bad92cd4bb55ba0408ebe6d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  HP: 3
-  dmg: 1
+  speed: 6
+  LifeTime: 12
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -145,7 +119,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 37398665
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 614a265cec290ae4c83d98e16109ed38, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1940fe5688f2f924a91ab95cf29752a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

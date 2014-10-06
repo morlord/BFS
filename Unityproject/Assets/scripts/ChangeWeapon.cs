@@ -44,6 +44,18 @@ public class ChangeWeapon : MonoBehaviour
 		hero.bullet = bullet;
 
 	}
+	public void SetDelta(float Deltatime)
+	{
+		paused = false;
+		var hero = GameObject.Find("hero").GetComponent<HeroBehavior>();
+		hero.DeltaTime = Deltatime;
+	}
+	/*public void SetDmg(int Dmg)
+	{
+		paused = false;
+		var bee = GameObject.Find ("beemove 2").GetComponent<beeBehavior> ();
+		bee.dmg = Dmg;
+	}*/
 	public void SetWeaponSound (AudioClip fire)
 	{
 		paused = false;

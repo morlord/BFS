@@ -7,10 +7,10 @@ public class insectoidcontroller : MonoBehaviour {
 	public float speed;
 	private Animator animator;
 	public Rigidbody2D plasma;
-	public Rigidbody2D biobullet;
+	public ParticleSystem ParticleSystem1;
 	private bool isLive = true;
 	private bool isHurt = true;
-	private bool isMove = true;
+
 
 	public int HP;
 	private int timelimit=1;
@@ -33,7 +33,7 @@ public class insectoidcontroller : MonoBehaviour {
 	{
 		if (collider.gameObject.tag == "bullet")
 		{
-			HP -= 1;
+			HP -= 20;
 			DestroyObject(collider.gameObject);
 			if (HP <= 30)
 			{
@@ -42,15 +42,14 @@ public class insectoidcontroller : MonoBehaviour {
 				transform.position.Set(transform.position.x, transform.position.y, 0);
 				isHurt = false;
 				DestroyObject(collider.gameObject);
-				animator.SetBool ("isMove", false);
-				isMove = false;
+
 			}
 
 			if (HP <= 0)
 			{
 				animator.SetBool("isLive", false);
 				rigidbody2D.velocity = Vector2.zero;
-				transform.position.Set(transform.position.x, transform.position.y, 0);
+				transform.position.Set(transform.position.x+4.0f, transform.position.y, 0);
 				isLive = false;
 				DestroyObject(collider.gameObject);
 				rigidbody2D.collider2D.enabled = false;
@@ -86,12 +85,11 @@ public class insectoidcontroller : MonoBehaviour {
 				plasma.velocity = Vector2.right;
 			timelimit = Random.Range (100, 300);
 		}
-		/*if (timelimit1 == 1 && !isHurt && isLive) 
-		{
-			Rigidbody2D biobulletInstance = Instantiate (biobullet, new Vector3 (transform.position.x + 9.0f, transform.position.y + 0.6f, transform.position.z), Quaternion.Euler (new Vector3 (0, 0, 0))) as Rigidbody2D;
-			if (biobulletInstance != null)
-				biobullet.velocity = Vector2.right;
-			timelimit1 = Random.Range (100, 300);
-		}*/
+		if (timelimit1 == 1 && !isHurt && isLive) {
+						ParticleSystem biobulletInstance = Instantiate (ParticleSystem1, new Vector3 (transform.position.x+3.0f, transform.position.y, transform.position.z), Quaternion.Euler (new Vector3 (0, 0, 0))) as ParticleSystem;
+						if (biobulletInstance != null)
+				ParticleSystem1.Play();
+						timelimit1 = Random.Range (1, 10);
+				}
 	}
 }
