@@ -31,9 +31,9 @@ public class beeBehavior : MonoBehaviour
 		//Debug.Log ("collides");
         if (collider.gameObject.tag == "bullet")
         {
-			//dmg = GameObject.Find("Hero").GetComponent<HeroBehavior>().Dmg;
-            //HP -= dmg;
-			HP -=1;
+			dmg = FindObjectOfType<HeroBehavior>().Dmg;
+            HP -= dmg;
+			//HP -=1;
             DestroyObject(collider.gameObject);
             if (HP <= 0)
             {

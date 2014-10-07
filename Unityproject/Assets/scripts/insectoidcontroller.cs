@@ -20,6 +20,7 @@ public class insectoidcontroller : MonoBehaviour {
 	void Start()
 	{
 		animator = GetComponent<Animator>();
+		ParticleSystem1.startDelay = Random.Range(1f, 1.6f);
 	}
 	
 	// Update is called once per frame
@@ -69,7 +70,7 @@ public class insectoidcontroller : MonoBehaviour {
 			timelimit -= 1;
 		}
 		if (timelimit1 > 1) {
-			timelimit -= 1;
+			timelimit1 -= 1;
 		}
 		
 		if (timelimit == 1 && isHurt) {
@@ -85,11 +86,12 @@ public class insectoidcontroller : MonoBehaviour {
 				plasma.velocity = Vector2.right;
 			timelimit = Random.Range (100, 300);
 		}
-		if (timelimit1 == 1 && !isHurt && isLive) {
-						ParticleSystem biobulletInstance = Instantiate (ParticleSystem1, new Vector3 (transform.position.x+3.0f, transform.position.y, transform.position.z), Quaternion.Euler (new Vector3 (0, 0, 0))) as ParticleSystem;
-						if (biobulletInstance != null)
-				ParticleSystem1.Play();
-						timelimit1 = Random.Range (1, 10);
-				}
+		if (timelimit1 == 1 && !isHurt && isLive)
+		{
+			//ParticleSystem biobulletInstance = Instantiate (ParticleSystem1, new Vector3 (transform.position.x+3.0f, transform.position.y, transform.position.z), Quaternion.Euler (new Vector3 (0, 0, 0))) as ParticleSystem;
+			//if (ParticleSystem1 != null)
+			ParticleSystem1.Play();
+			timelimit1 = Random.Range(20, 100);
+		}
 	}
 }

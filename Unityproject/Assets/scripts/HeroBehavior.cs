@@ -24,8 +24,8 @@ public class HeroBehavior : MonoBehaviour
 	public AudioClip reloadSound;
 	public AudioClip fireSound;
 	public float DeltaTime;
-    private float deltaTime = 0.5f;
-	//public int Dmg;
+    private float deltaTime = 0.4f;
+	public int Dmg=1;
 	// Use this for initialization
 	void Start ()
 	{

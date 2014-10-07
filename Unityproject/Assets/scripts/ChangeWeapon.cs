@@ -6,9 +6,11 @@ public class ChangeWeapon : MonoBehaviour
 {
 
     private bool paused=false;
+	private HeroBehavior hero;
 	// Use this for initialization
 	void Start () {
 	    //gameObject.transform.position = Camera.main.ViewportToWorldPoint(new Vector3(4f, 65f));
+		hero = FindObjectOfType<HeroBehavior>();
 	}
 	
 	// Update is called once per frame
@@ -33,33 +35,32 @@ public class ChangeWeapon : MonoBehaviour
     public void SetWeapon(RuntimeAnimatorController controler)
     {
         paused = false;
-        var hero = GameObject.Find("hero");
+        //var hero = GameObject.Find("hero");
         var controller = hero.GetComponent<Animator>();
         controller.runtimeAnimatorController = controler;
     }
 	public void SetBullet(Rigidbody2D bullet)
 	{
 		paused = false;
-		var hero = GameObject.Find("hero").GetComponent<HeroBehavior>();
+		//var hero = GameObject.Find("hero").GetComponent<HeroBehavior>();
 		hero.bullet = bullet;
 
 	}
 	public void SetDelta(float Deltatime)
 	{
 		paused = false;
-		var hero = GameObject.Find("hero").GetComponent<HeroBehavior>();
+		//var hero = GameObject.Find("hero").GetComponent<HeroBehavior>();
 		hero.DeltaTime = Deltatime;
 	}
-	/*public void SetDmg(int Dmg)
+	public void SetDmg(int dmg)
 	{
 		paused = false;
-		var bee = GameObject.Find ("beemove 2").GetComponent<beeBehavior> ();
-		bee.dmg = Dmg;
-	}*/
+		hero.Dmg = dmg;
+	}
 	public void SetWeaponSound (AudioClip fire)
 	{
 		paused = false;
-		var hero = GameObject.Find("hero").GetComponent<HeroBehavior>();
+		//var hero = GameObject.Find("hero").GetComponent<HeroBehavior>();
 		hero.fireSound = fire;
 		var go = GameObject.Find("Window");
 		go.SetActive(false);
