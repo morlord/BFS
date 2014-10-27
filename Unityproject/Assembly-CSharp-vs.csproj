@@ -58,6 +58,7 @@
      <Compile Include="Assets\scripts\RightBorderBehavior.cs" />
      <Compile Include="Assets\scripts\Scoring.cs" />
      <Compile Include="Assets\scripts\Serializator.cs" />
+     <Compile Include="Assets\scripts\ShowScore.cs" />
      <Compile Include="Assets\scripts\SpawnController.cs" />
      <Compile Include="Assets\scripts\SpawnController1.cs" />
      <Compile Include="Assets\scripts\Sputnikbehaviour.cs" />
@@ -76,6 +77,7 @@
      <Compile Include="Assets\scripts\skviBehaviourScript.cs" />
      <Compile Include="Assets\scripts\victory.cs" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
+     <None Include="Assets\Resources\scores.xml" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />

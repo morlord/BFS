@@ -20,7 +20,7 @@ public class SpawnController : MonoBehaviour
 	public GameObject EndGameMenu;
 	private double _score;
 	public bool IsBoss;
-	private XDocument document;
+	//private XDocument document;
 //	private int nextlvl;
 	// Use this for initialization
 	private void Start()
@@ -47,6 +47,7 @@ public class SpawnController : MonoBehaviour
 
 	private void CreateMob()
 	{
+		Debug.Log("create mob");
 		int randomMob = Random.Range(0, MobsArray.Count());
 
 		int randomSpawn = Random.Range(0, SpawnLocationArray.Count());

@@ -15,6 +15,11 @@ public class StartGame : MonoBehaviour {
         Application.LoadLevel(1);
     }
 
+	public void LoadScores()
+	{
+		Application.LoadLevel(8);
+	}
+
 	public void LoadOptions()
 	{
 		Application.LoadLevel(2);
