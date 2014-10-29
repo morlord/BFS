@@ -22,4 +22,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/lvl4.unity
   - enabled: 1
-    path: Assets/Scenes/UIScene.unity
+    path: Assets/Scenes/Scores.unity
