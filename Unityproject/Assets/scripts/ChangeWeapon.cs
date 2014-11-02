@@ -7,6 +7,7 @@ public class ChangeWeapon : MonoBehaviour
 
     private bool paused=false;
 	private HeroBehavior hero;
+	public Text ScoreText;
 	// Use this for initialization
 	void Start () {
 	    //gameObject.transform.position = Camera.main.ViewportToWorldPoint(new Vector3(4f, 65f));
@@ -62,7 +63,22 @@ public class ChangeWeapon : MonoBehaviour
 		paused = false;
 		//var hero = GameObject.Find("hero").GetComponent<HeroBehavior>();
 		hero.fireSound = fire;
-		var go = GameObject.Find("Window");
-		go.SetActive(false);
+	}
+
+	public void CountCost(Text text)
+	{
+		var cost = int.Parse(text.text);
+		var points = int.Parse(ScoreText.text);
+		if (points >= cost)
+		{
+			points -= cost;
+			ScoreText.text = points.ToString();
+			var go = GameObject.Find("Window");
+			go.SetActive(false);
+		}
+		else
+		{
+			
+		}
 	}
 }
