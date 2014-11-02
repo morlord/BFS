@@ -47,13 +47,13 @@ public class SpawnController : MonoBehaviour
 
 	private void CreateMob()
 	{
-		Debug.Log("create mob");
+//		Debug.Log("create mob");
 		int randomMob = Random.Range(0, MobsArray.Count());
 
 		int randomSpawn = Random.Range(0, SpawnLocationArray.Count());
-
-		Instantiate(MobsArray[randomMob], SpawnLocationArray[randomSpawn].position,
-			SpawnLocationArray[randomSpawn].rotation);
+		GameObject mob=Instantiate(MobsArray[randomMob], SpawnLocationArray[randomSpawn].position,
+			SpawnLocationArray[randomSpawn].rotation) as GameObject;
+		mob.transform.SetParent(SpawnLocationArray[randomSpawn]);
 		if (_score >= Score)
 		{
 			if (IsBoss)
