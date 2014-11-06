@@ -20,7 +20,7 @@ public class insectoidcontroller : MonoBehaviour {
 	void Start()
 	{
 		animator = GetComponent<Animator>();
-		ParticleSystem1.startDelay = Random.Range(1f, 1.6f);
+		ParticleSystem1.startDelay = Random.Range(1f, 3.0f);
 	}
 	
 	// Update is called once per frame
@@ -65,7 +65,7 @@ public class insectoidcontroller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		 
 		if (timelimit > 1) {
 			timelimit -= 1;
 		}

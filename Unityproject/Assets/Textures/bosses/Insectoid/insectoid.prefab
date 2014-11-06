@@ -9,10 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
-  - 50: {fileID: 5000000}
   - 60: {fileID: 6000000}
   - 95: {fileID: 9500000}
   - 114: {fileID: 11400000}
+  - 50: {fileID: 5000000}
   m_Layer: 0
   m_Name: insectoid
   m_TagString: Untagged
@@ -46,7 +46,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.98587513, y: 1.06286287, z: -2.09810005e-05}
+  m_LocalPosition: {x: -3.58699989, y: -3.0007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4be86245095e85a40969ff271efaeb4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: .00999999978
   plasma: {fileID: 5000000, guid: f1f884c80bc2bfb4d892a0df4fa99ee9, type: 2}
   ParticleSystem1: {fileID: 19800000}
   HP: 31
@@ -289,7 +289,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  lengthInSec: 3
+  lengthInSec: 1
   startDelay: 0
   speed: 1
   randomSeed: 0
