@@ -30,8 +30,6 @@ GameObject:
   - 4: {fileID: 400002}
   - 198: {fileID: 19800000}
   - 199: {fileID: 19900000}
-  - 50: {fileID: 5000002}
-  - 60: {fileID: 6000002}
   m_Layer: 9
   m_Name: Particle System 1
   m_TagString: plasma
@@ -46,7 +44,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.98587513, y: 1.06286287, z: -2.09810005e-05}
+  m_LocalPosition: {x: -6.9000001, y: 1.05999994, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -59,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: -.501084983, y: .498912752, z: -.498912692, w: .501084983}
-  m_LocalPosition: {x: 2.10657597, y: .446799755, z: -4.99997902}
+  m_LocalPosition: {x: 2.10657597, y: .446799755, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -71,21 +69,6 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Mass: 9.99999975e-05
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
---- !u!50 &5000002
-Rigidbody2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -237,22 +220,6 @@ PolygonCollider2D:
       - {x: .084615387, y: -.934615374}
       - {x: .0076923077, y: -.834615409}
       - {x: -.0769230798, y: -.657692313}
---- !u!60 &6000002
-PolygonCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Poly:
-    m_Paths:
-    - - {x: 0, y: 1}
-      - {x: .95105654, y: .309016973}
-      - {x: .587785184, y: -.809017062}
-      - {x: -.587785363, y: -.809016943}
-      - {x: -.95105648, y: .309017122}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -1317,16 +1284,16 @@ ParticleSystem:
     plane4: {fileID: 0}
     plane5: {fileID: 0}
     dampen: 0
-    bounce: 1
-    energyLossOnCollision: 0
-    minKillSpeed: 16
+    bounce: 0
+    energyLossOnCollision: .5
+    minKillSpeed: 2
     particleRadius: .00999999978
     collidesWith:
       serializedVersion: 2
       m_Bits: 4294963912
     quality: 0
     voxelSize: .5
-    collisionMessages: 0
+    collisionMessages: 1
   SubModule:
     enabled: 0
     subEmitterBirth: {fileID: 0}

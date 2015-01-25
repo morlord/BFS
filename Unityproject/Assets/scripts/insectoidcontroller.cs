@@ -62,10 +62,17 @@ public class insectoidcontroller : MonoBehaviour {
 	{
 		rigidbody2D.AddForce(direction * speed * 10);
 	}
+
+	
 	
 	// Update is called once per frame
 	void Update () {
-		
+		//Debug.Log(ParticleSystem1.time);
+		if (ParticleSystem1.isPlaying && ParticleSystem1.time>=(ParticleSystem1.duration-ParticleSystem1.startDelay-0.25f))
+		{
+			ParticleSystem1.Stop();
+			ParticleSystem1.gameObject.SetActive(false);
+		}
 		if (timelimit > 1) {
 			timelimit -= 1;
 		}
@@ -74,24 +81,26 @@ public class insectoidcontroller : MonoBehaviour {
 		}
 		
 		if (timelimit == 1 && isHurt) {
-			Rigidbody2D plasmaInstance = Instantiate (plasma, new Vector3 (transform.position.x + 0.7f, transform.position.y + 0.6f, transform.position.z), Quaternion.Euler (new Vector3 (0, 0, 0))) as Rigidbody2D;
-			if (plasmaInstance != null)
-				plasma.velocity = Vector2.right;
-			timelimit = Random.Range (10, 70);
+			//Rigidbody2D plasmaInstance = Instantiate (plasma, new Vector3 (transform.position.x + 0.7f, transform.position.y + 0.6f, transform.position.z), Quaternion.Euler (new Vector3 (0, 0, 0))) as Rigidbody2D;
+			//if (plasmaInstance != null)
+			//	plasma.velocity = Vector2.right;
+			//timelimit = Random.Range (10, 70);
 		}
 		if (timelimit == 1 && !isHurt && isLive) 
 		{
-			Rigidbody2D plasmaInstance = Instantiate (plasma, new Vector3 (transform.position.x + 0.7f, transform.position.y + 0.6f, transform.position.z), Quaternion.Euler (new Vector3 (0, 0, 0))) as Rigidbody2D;
-			if (plasmaInstance != null)
-				plasma.velocity = Vector2.right;
+			//Rigidbody2D plasmaInstance = Instantiate (plasma, new Vector3 (transform.position.x + 0.7f, transform.position.y + 0.6f, transform.position.z), Quaternion.Euler (new Vector3 (0, 0, 0))) as Rigidbody2D;
+			//if (plasmaInstance != null)
+			//	plasma.velocity = Vector2.right;
 			timelimit = Random.Range (100, 300);
 		}
 		if (timelimit1 == 1 && !isHurt && isLive)
 		{
 			//ParticleSystem biobulletInstance = Instantiate (ParticleSystem1, new Vector3 (transform.position.x+3.0f, transform.position.y, transform.position.z), Quaternion.Euler (new Vector3 (0, 0, 0))) as ParticleSystem;
 			//if (ParticleSystem1 != null)
+			//Debug.Log(ParticleSystem1.isStopped.ToString()+" --stopped, "+ParticleSystem1.isPlaying+" --playing, "+ParticleSystem1.isPaused+" --paused");
+			ParticleSystem1.gameObject.SetActive(true);
 			ParticleSystem1.Play();
-			timelimit1 = Random.Range(20, 100);
+			timelimit1 = Random.Range(80, 170);
 		}
 	}
 }

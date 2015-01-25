@@ -14,7 +14,8 @@ public class HeroBehavior : MonoBehaviour
     public Rigidbody2D bullet;
     public Joystick  RJoystick;
 	private bool isLive = true;
-	public int HP;
+	public float hp;
+	public float HP { get { return hp; } }
     //Vector2 inputForce;
 	protected UnityEngine.UI.Text BulletsNum;
 	public int bullets;
@@ -81,24 +82,38 @@ public class HeroBehavior : MonoBehaviour
 			anim.SetFloat("Speed", Mathf.Abs(rigidbody2D.velocity.magnitude));
 		}
 	}
+	
+	public void Hit(float dmg)
+	{
+		hp -= dmg;
+		//CheckHP();
+		if (HP <= 0) Invoke("endGame", 2);
+	}
+
 	void OnTriggerEnter2D(Collider2D collider)
 	{
 		if (collider.gameObject.tag == "plasma")
 		{
-			HP -= 1;
+			hp -= 1;
 			DestroyObject(collider.gameObject);
-			if (HP <= 0)
-			{
-				anim.SetBool("isLive", false);
-                rigidbody2D.velocity = Vector2.zero;
-                transform.position.Set(transform.position.x, transform.position.y, 0);
-				isLive = false;
-				DestroyObject(collider.gameObject);
-				rigidbody2D.collider2D.enabled = false;
-				GetComponent<SpriteRenderer>().sortingLayerName = "mobs";
-				Destroy(this);
-				Invoke("endGame",2);
-			}
+			CheckHP();
+		}
+	}
+
+	private void CheckHP()
+	{
+		//Collider2D collider;
+		if (HP <= 0)
+		{
+			anim.SetBool("isLive", false);
+			rigidbody2D.velocity = Vector2.zero;
+			transform.position.Set(transform.position.x, transform.position.y, 0);
+			isLive = false;
+			//DestroyObject(collider.gameObject);
+			rigidbody2D.collider2D.enabled = false;
+			GetComponent<SpriteRenderer>().sortingLayerName = "mobs";
+			Destroy(this);
+			Invoke("endGame", 2);
 		}
 	}
 
