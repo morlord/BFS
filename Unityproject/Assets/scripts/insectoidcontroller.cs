@@ -81,16 +81,16 @@ public class insectoidcontroller : MonoBehaviour {
 		}
 		
 		if (timelimit == 1 && isHurt) {
-			//Rigidbody2D plasmaInstance = Instantiate (plasma, new Vector3 (transform.position.x + 0.7f, transform.position.y + 0.6f, transform.position.z), Quaternion.Euler (new Vector3 (0, 0, 0))) as Rigidbody2D;
-			//if (plasmaInstance != null)
-			//	plasma.velocity = Vector2.right;
-			//timelimit = Random.Range (10, 70);
+			Rigidbody2D plasmaInstance = Instantiate (plasma, new Vector3 (transform.position.x + 0.7f, transform.position.y + 0.6f, transform.position.z), Quaternion.Euler (new Vector3 (0, 0, 0))) as Rigidbody2D;
+			if (plasmaInstance != null)
+				plasma.velocity = Vector2.right;
+			timelimit = Random.Range (10, 70);
 		}
 		if (timelimit == 1 && !isHurt && isLive) 
 		{
-			//Rigidbody2D plasmaInstance = Instantiate (plasma, new Vector3 (transform.position.x + 0.7f, transform.position.y + 0.6f, transform.position.z), Quaternion.Euler (new Vector3 (0, 0, 0))) as Rigidbody2D;
-			//if (plasmaInstance != null)
-			//	plasma.velocity = Vector2.right;
+			Rigidbody2D plasmaInstance = Instantiate (plasma, new Vector3 (transform.position.x + 0.7f, transform.position.y + 0.6f, transform.position.z), Quaternion.Euler (new Vector3 (0, 0, 0))) as Rigidbody2D;
+			if (plasmaInstance != null)
+				plasma.velocity = Vector2.right;
 			timelimit = Random.Range (100, 300);
 		}
 		if (timelimit1 == 1 && !isHurt && isLive)
