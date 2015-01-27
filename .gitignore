@@ -34,7 +34,7 @@ ExportedObj/
 *.user
 *.unityproj
 *.booproj
- 
+*.dll
 # -------------[ OS generated ]------------------------ #
 .DS_Store
 .DS_Store?
