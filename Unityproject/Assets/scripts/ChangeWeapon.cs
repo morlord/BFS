@@ -7,6 +7,7 @@ public class ChangeWeapon : MonoBehaviour
 
     private bool paused=false;
 	private HeroBehavior hero;
+    private bulletBehavior bullet;
 	public Text ScoreText;
 	// Use this for initialization
 	void Start () {
@@ -58,11 +59,23 @@ public class ChangeWeapon : MonoBehaviour
 		paused = false;
 		hero.Dmg = dmg;
 	}
+    public void SetBC(int bullets)
+    {
+        paused = false;
+        hero.bullets = bullets;
+    }
+    public void SetBcoord(float yc)
+    {
+        paused = false;
+        //hero.bullet.transform.position.y = yc;
+    }
 	public void SetWeaponSound (AudioClip fire)
 	{
 		paused = false;
 		//var hero = GameObject.Find("hero").GetComponent<HeroBehavior>();
 		hero.fireSound = fire;
+        var go = GameObject.Find("Window");
+        go.SetActive(false);
 	}
 
 	public void CountCost(Text text)
@@ -73,8 +86,8 @@ public class ChangeWeapon : MonoBehaviour
 		{
 			points -= cost;
 			ScoreText.text = points.ToString();
-			var go = GameObject.Find("Window");
-			go.SetActive(false);
+			//var go = GameObject.Find("Window");
+			//go.SetActive(false);
 		}
 		else
 		{

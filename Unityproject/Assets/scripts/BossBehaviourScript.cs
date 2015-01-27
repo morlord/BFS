@@ -36,7 +36,7 @@ public class BossBehaviourScript : MonoBehaviour {
 			{
                 animator.SetBool("isLive", false);
 				rigidbody2D.velocity = Vector2.zero;
-                transform.position.Set(transform.position.x, transform.position.y, 0);
+                transform.position.Set(transform.position.x-50000.0f, transform.position.y-5000.0f, 0);
 				isLive = false;
 				DestroyObject(collider.gameObject);
 				rigidbody2D.collider2D.enabled = false;
@@ -61,7 +61,7 @@ public class BossBehaviourScript : MonoBehaviour {
 	if (timelimit == 1 &&isLive) 
 		
 		{
-			Rigidbody2D plasmaInstance = Instantiate(plasma, new Vector3( transform.position.x+0.7f,transform.position.y+0.9f,transform.position.z), Quaternion.Euler(new Vector3(0,0,0))) as Rigidbody2D;
+			Rigidbody2D plasmaInstance = Instantiate(plasma, new Vector3(transform.position.x+0.7f,transform.position.y+0.9f,transform.position.z), Quaternion.Euler(new Vector3(0,0,0))) as Rigidbody2D;
 			if (plasmaInstance != null) plasma.velocity = Vector2.right;
 			timelimit = Random.Range(10, 70);
 		}
