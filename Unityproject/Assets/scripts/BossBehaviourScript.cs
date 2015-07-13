@@ -23,7 +23,7 @@ public class BossBehaviourScript : MonoBehaviour {
 	void FixedUpdate()
 	{
 		if(isLive)
-			rigidbody2D.velocity = Vector2.right * speed;
+			GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
 	}
 	
 	void OnTriggerEnter2D(Collider2D collider)
@@ -35,18 +35,18 @@ public class BossBehaviourScript : MonoBehaviour {
 			if (HP <= 0)
 			{
                 animator.SetBool("isLive", false);
-				rigidbody2D.velocity = Vector2.zero;
+				GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                 transform.position.Set(transform.position.x-50000.0f, transform.position.y-5000.0f, 0);
 				isLive = false;
 				DestroyObject(collider.gameObject);
-				rigidbody2D.collider2D.enabled = false;
+				GetComponent<Rigidbody2D>().GetComponent<Collider2D>().enabled = false;
 			}
 		}
 	}
 	
 	private void ApplyForce(Vector2 direction)
 	{
-		rigidbody2D.AddForce(direction * speed * 10);
+		GetComponent<Rigidbody2D>().AddForce(direction * speed * 10);
 	}
 	
 	// Update is called once per frame

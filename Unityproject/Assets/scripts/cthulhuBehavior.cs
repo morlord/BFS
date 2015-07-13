@@ -22,7 +22,7 @@ public class cthulhuBehavior : MonoBehaviour
     void FixedUpdate()
     {
         if (isLive)
-            rigidbody2D.velocity = Vector2.right * speed;
+            GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
         tim = animator.GetCurrentAnimatorStateInfo(0).normalizedTime%1;
         //if (!animator.GetBool("isLive") && animator.GetCurrentAnimatorStateInfo(0).normalizedTime % 1 > 0.9)
         //{
@@ -45,10 +45,10 @@ public class cthulhuBehavior : MonoBehaviour
             {
                 animator.SetBool("isLive", false);
                 transform.position.Set(transform.position.x,transform.position.y,0);
-                rigidbody2D.velocity = Vector2.zero;
+                GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                 isLive = false;
                 DestroyObject(collider.gameObject);
-                rigidbody2D.collider2D.enabled = false;
+                GetComponent<Rigidbody2D>().GetComponent<Collider2D>().enabled = false;
 	            this.GetComponent<SpriteRenderer>().sortingOrder = 0;
                 Invoke("CreateMob", 0.6f);
             }
@@ -57,6 +57,6 @@ public class cthulhuBehavior : MonoBehaviour
 
     private void ApplyForce(Vector2 direction)
     {
-        rigidbody2D.AddForce(direction * speed * 10);
+        GetComponent<Rigidbody2D>().AddForce(direction * speed * 10);
     }
 }

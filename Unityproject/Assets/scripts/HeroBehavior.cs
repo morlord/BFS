@@ -31,7 +31,7 @@ public class HeroBehavior : MonoBehaviour
 	void Start ()
 	{
 			anim = GetComponent<Animator>();
-			audio.clip = reloadSound;
+			GetComponent<AudioSource>().clip = reloadSound;
 			deltaTime = DeltaTime;
 			bulletsNum = bullets;
 			var texts = FindObjectsOfType<Text>();
@@ -70,16 +70,16 @@ public class HeroBehavior : MonoBehaviour
 			var moveR = Input.GetAxis("Horizontal");
 			var moveD = Input.GetAxis("Vertical");
 			if (Mathf.Abs(moveD) > 0.1 || Mathf.Abs(moveR) > 0.1)
-				rigidbody2D.velocity = new Vector2(moveR * maxSpeed, moveD * maxSpeed);
+				GetComponent<Rigidbody2D>().velocity = new Vector2(moveR * maxSpeed, moveD * maxSpeed);
 			else
 			{
-				rigidbody2D.velocity = new Vector2(RJoystick.position.x * maxSpeed, RJoystick.position.y * maxSpeed);
-				if (rigidbody2D.velocity.x > 0)
+				GetComponent<Rigidbody2D>().velocity = new Vector2(RJoystick.position.x * maxSpeed, RJoystick.position.y * maxSpeed);
+				if (GetComponent<Rigidbody2D>().velocity.x > 0)
 				{
-					rigidbody2D.velocity*=1.3f;
+					GetComponent<Rigidbody2D>().velocity*=1.3f;
 				}
 			}
-			anim.SetFloat("Speed", Mathf.Abs(rigidbody2D.velocity.magnitude));
+			anim.SetFloat("Speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.magnitude));
 		}
 	}
 	
@@ -106,11 +106,11 @@ public class HeroBehavior : MonoBehaviour
 		if (HP <= 0)
 		{
 			anim.SetBool("isLive", false);
-			rigidbody2D.velocity = Vector2.zero;
+			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 			transform.position.Set(transform.position.x, transform.position.y, 0);
 			isLive = false;
 			//DestroyObject(collider.gameObject);
-			rigidbody2D.collider2D.enabled = false;
+			GetComponent<Rigidbody2D>().GetComponent<Collider2D>().enabled = false;
 			GetComponent<SpriteRenderer>().sortingLayerName = "mobs";
 			Destroy(this);
 			Invoke("endGame", 2);
@@ -145,8 +145,8 @@ public class HeroBehavior : MonoBehaviour
 						Instantiate(bullet, new Vector3(transform.position.x, transform.position.y + 0.4f, transform.position.z),
 							Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
 					if (bulletInstance != null) bulletInstance.velocity = Vector2.right * -1;
-					audio.clip = fireSound;
-					audio.Play();
+					GetComponent<AudioSource>().clip = fireSound;
+					GetComponent<AudioSource>().Play();
 					bulletsNum -= 1;
 					BulletsNum.text = bulletsNum.ToString();
 				}
@@ -162,23 +162,23 @@ public class HeroBehavior : MonoBehaviour
 					Instantiate(bullet, new Vector3(transform.position.x, transform.position.y + 0.4f, transform.position.z),
 						Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
 				if (bulletInstance != null) bulletInstance.velocity = Vector2.right * -1;
-				audio.clip = fireSound;
-				audio.Play();
+				GetComponent<AudioSource>().clip = fireSound;
+				GetComponent<AudioSource>().Play();
 				bulletsNum -= 1;
 				BulletsNum.text = bulletsNum.ToString();
 			}
 		}
-		if (bulletsNum <= 0 && !isReloading && !audio.isPlaying)
+		if (bulletsNum <= 0 && !isReloading && !GetComponent<AudioSource>().isPlaying)
 		{
-			audio.clip = reloadSound;
+			GetComponent<AudioSource>().clip = reloadSound;
 			isReloading = true;
-			audio.Play();
+			GetComponent<AudioSource>().Play();
 			//reloadTime = reloadSound.length;
 		}
 		if (isReloading)
 		{
 			//reloadTime -= Mathf.Abs(deltaTime);
-			if (!audio.isPlaying)
+			if (!GetComponent<AudioSource>().isPlaying)
 			{
 				isReloading = false;
 				bulletsNum = bullets;

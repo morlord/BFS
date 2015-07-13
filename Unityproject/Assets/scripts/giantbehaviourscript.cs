@@ -19,7 +19,7 @@ public class giantbehaviourscript : MonoBehaviour {
 	void FixedUpdate()
 	{
 		if(isLive)
-			rigidbody2D.velocity = Vector2.right * speed;
+			GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
 	}
 	
 	void OnTriggerEnter2D(Collider2D collider)
@@ -32,11 +32,11 @@ public class giantbehaviourscript : MonoBehaviour {
 			if (HP <= 0)
 			{
 				animator.SetBool("isLive", false);
-				rigidbody2D.velocity = Vector2.zero;
+				GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 				transform.position.Set(transform.position.x, transform.position.y, 0);
 				isLive = false;
 				DestroyObject(collider.gameObject);
-				Destroy(rigidbody2D.collider2D);
+				Destroy(GetComponent<Rigidbody2D>().GetComponent<Collider2D>());
 				gameObject.layer = 0;
 				this.GetComponent<SpriteRenderer>().sortingOrder = 0;
 				controller.BroadcastMessage("AddScore",10);
@@ -46,6 +46,6 @@ public class giantbehaviourscript : MonoBehaviour {
 	
 	private void ApplyForce(Vector2 direction)
 	{
-		rigidbody2D.AddForce(direction * speed * 10);
+		GetComponent<Rigidbody2D>().AddForce(direction * speed * 10);
 	}
 }

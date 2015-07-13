@@ -17,10 +17,10 @@ public class PlaneBehaviourScript : MonoBehaviour {
 	}
 	IEnumerator StartLoader () 
 	{
-		rigidbody2D.velocity = -Vector2.right*2;
+		GetComponent<Rigidbody2D>().velocity = -Vector2.right*2;
 		yield return new WaitForSeconds(4.0f);
-		rigidbody2D.velocity = Vector2.zero;
-		rigidbody2D.gravityScale = 0;
+		GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+		GetComponent<Rigidbody2D>().gravityScale = 0;
 		if (timelimit == 1 && isLive == true) {
 			Rigidbody2D rocketInstance = Instantiate (rocket, new Vector3 (transform.position.x - 1.0f, transform.position.y + 0.1f, transform.position.z), Quaternion.Euler (new Vector3 (0, 0, 0))) as Rigidbody2D;
 			if (rocketInstance != null)
@@ -38,7 +38,7 @@ public class PlaneBehaviourScript : MonoBehaviour {
 			transform.position.Set (transform.position.x, transform.position.y, 0);
 			isLive = false;
 			//DestroyObject (collider.gameObject);
-			rigidbody2D.collider2D.enabled = false;
+			GetComponent<Rigidbody2D>().GetComponent<Collider2D>().enabled = false;
 		}
 	}
 	// Update is called once per frame

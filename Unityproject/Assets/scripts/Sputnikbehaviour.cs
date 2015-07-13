@@ -34,11 +34,11 @@ public class Sputnikbehaviour : MonoBehaviour {
 			if (HP <= 0)
 			{
 				animator.SetBool("isLive", false);
-				rigidbody2D.velocity = Vector2.zero;
+				GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 				transform.position.Set(transform.position.x, transform.position.y, 0);
 				//isLive = false;
 				DestroyObject(collider.gameObject);
-				Destroy(rigidbody2D.collider2D);
+				Destroy(GetComponent<Rigidbody2D>().GetComponent<Collider2D>());
 				gameObject.layer = 0;
 				this.GetComponent<SpriteRenderer>().sortingOrder = 0;
 				controller.BroadcastMessage("AddScore",100);
@@ -49,9 +49,9 @@ public class Sputnikbehaviour : MonoBehaviour {
 
 		IEnumerator StartLoader() 
 	{ 		
-			rigidbody2D.velocity = Vector2.right * speed * 2;
+			GetComponent<Rigidbody2D>().velocity = Vector2.right * speed * 2;
 						yield return new WaitForSeconds (2.0f);
-						rigidbody2D.velocity = Vector2.right*speed*5;
+						GetComponent<Rigidbody2D>().velocity = Vector2.right*speed*5;
 			
 				
 

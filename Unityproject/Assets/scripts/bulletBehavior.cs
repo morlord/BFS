@@ -15,6 +15,6 @@ public class bulletBehavior : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rigidbody2D.velocity = -Vector2.right * speed;
+        GetComponent<Rigidbody2D>().velocity = -Vector2.right * speed;
     }
 }

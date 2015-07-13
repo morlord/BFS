@@ -16,10 +16,10 @@ public class backgroundlvl2 : MonoBehaviour {
 	}
 	IEnumerator StartLoader () 
 	{
-		rigidbody2D.velocity = Vector2.right*2;
+		GetComponent<Rigidbody2D>().velocity = Vector2.right*2;
 		yield return new WaitForSeconds(4.0f);
-		rigidbody2D.velocity = Vector2.zero;
-		rigidbody2D.gravityScale = 0;
+		GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+		GetComponent<Rigidbody2D>().gravityScale = 0;
 		yield return new WaitForSeconds(10.0f);
 
 		if (timelimit == 1) 
